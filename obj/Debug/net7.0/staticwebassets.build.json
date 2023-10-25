@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "oc8L1Z8PyJrF9UBST6XIUalDsLNag2zUnziXfMfYBhQ=",
-  "Source": "OrderMircroservice",
-  "BasePath": "_content/OrderMircroservice",
+  "Hash": "ycwYvR9UlEba92djuZkSQqpt1qHW2lnsOpWJVuu1RGk=",
+  "Source": "OrderMicroservice",
+  "BasePath": "_content/OrderMicroservice",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

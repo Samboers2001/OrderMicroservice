@@ -585,9 +585,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/samboers/development/order_management_system/OrderMicroservice/OrderMircroservice.csproj",
-      "projectName": "OrderMircroservice",
-      "projectPath": "/Users/samboers/development/order_management_system/OrderMicroservice/OrderMircroservice.csproj",
+      "projectUniqueName": "/Users/samboers/development/order_management_system/OrderMicroservice/OrderMicroservice.csproj",
+      "projectName": "OrderMicroservice",
+      "projectPath": "/Users/samboers/development/order_management_system/OrderMicroservice/OrderMicroservice.csproj",
       "packagesPath": "/Users/samboers/.nuget/packages/",
       "outputPath": "/Users/samboers/development/order_management_system/OrderMicroservice/obj/",
       "projectStyle": "PackageReference",

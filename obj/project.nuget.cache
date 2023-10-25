@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4hMibWK131NfTQKPxSLaAje/vRBKlxRMuUGmzIaMEIngFMtDJOQdE22XLeKYpey91KFZl48DZcxc8KssRnbQ5A==",
+  "dgSpecHash": "TPcY4YENMt4ilxh8x3+ldOt2I/lU2cGHmeN6dsg3uj6rSIB6wFAEbtQcwbchmSwqTrG6NhjMggVq5boxQlSwcQ==",
   "success": true,
-  "projectFilePath": "/Users/samboers/development/order_management_system/OrderMicroservice/OrderMircroservice.csproj",
+  "projectFilePath": "/Users/samboers/development/order_management_system/OrderMicroservice/OrderMicroservice.csproj",
   "expectedPackageFiles": [
     "/Users/samboers/.nuget/packages/microsoft.aspnetcore.openapi/7.0.11/microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
     "/Users/samboers/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
