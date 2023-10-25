@@ -1,2 +1,7 @@
 language: csharp
 solution: OrderMicroservice.sln
+dotnet: 7.0
+script: 
+  - dotnet clean
+  - dotnet restore
+  - dotnet build
