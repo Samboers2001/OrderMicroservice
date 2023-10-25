@@ -1,6 +1,7 @@
 language: csharp
 solution: OrderMicroservice.sln
 dotnet: 7.0
+dist: focal
 
 before_install:
   - sudo apt-get update
