@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "oc8L1Z8PyJrF9UBST6XIUalDsLNag2zUnziXfMfYBhQ=",
+  "Source": "OrderMircroservice",
+  "BasePath": "_content/OrderMircroservice",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
