@@ -15,6 +15,5 @@ install:
 
 script:
   - dotnet --version  # Verify that the correct version is installed
-  - dotnet clean
   - dotnet restore
   - dotnet build
