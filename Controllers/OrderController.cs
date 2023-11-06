@@ -1,14 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace OrderMircroservice.Controllers;
-
-[ApiController]
-[Route("api/[controller]")]
-public class OrderController : ControllerBase
+namespace OrderMircroservice.Controllers
 {
-    [HttpGet]
-    public ActionResult<string> Get()
+    [ApiController]
+    [Route("api/[controller]")]
+    public class OrderController : ControllerBase
     {
-        return Ok("Hello from OrderController!");
+        [HttpGet]
+        public ActionResult<string> Get()
+        {
+            return Ok("Hello from OrderController!");
+        }
     }
+
 }
+
