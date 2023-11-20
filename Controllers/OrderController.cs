@@ -9,7 +9,7 @@ namespace OrderMircroservice.Controllers
         [HttpGet]
         public ActionResult<string> Get()
         {
-            return Ok("Hello from OrderController!");
+            return Ok("Hello from OrderController! And by the way this works too!");
         }
     }
 
