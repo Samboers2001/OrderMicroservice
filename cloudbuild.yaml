@@ -1,0 +1,41 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+    - 'build'
+    - '-t'
+    - 'gcr.io/ordering-system-404411/ordermicroservice:latest'
+    - '.'
+
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+    - 'push'
+    - 'gcr.io/ordering-system-404411/ordermicroservice:latest'
+
+
+- name: 'gcr.io/cloud-builders/kubectl'
+  args:
+    - 'apply'
+    - '-f'
+    - 'K8S/order-service/order-depl.yaml'
+
+  env:
+    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=ordering-system-autopilot-cluster'
+
+- name: 'gcr.io/cloud-builders/kubectl'
+  args:
+      - 'rollout'
+      - 'restart'
+      - 'deployment'
+      - 'order-depl'
+      - '-n' 
+      - 'ordering-system'
+
+  env:
+    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=ordering-system-autopilot-cluster'
+
+images: ['gcr.io/ordering-system-404411/ordermicroservice:latest']
+logsBucket: "gs://accountci-logs-bucket"
+
+
