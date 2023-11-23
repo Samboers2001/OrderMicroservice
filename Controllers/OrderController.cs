@@ -12,6 +12,5 @@ namespace OrderMircroservice.Controllers
             return Ok("Hello from OrderController! And by the way this works too!");
         }
     }
-
 }
 
