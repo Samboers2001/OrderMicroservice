@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using OrderMicroservice.AsyncDataServices;
+using OrderMicroservice.AsyncDataServices.Interfaces;
 using OrderMicroservice.Dtos;
 namespace OrderMicroservice.Controllers
 {

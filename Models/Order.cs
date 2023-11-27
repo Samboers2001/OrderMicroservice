@@ -7,12 +7,12 @@ namespace OrderMicroservice.Models
         [Key]
         public int OrderId { get; set; }
 
-        public int CustomerId { get; set; }
+        public string CustomerId { get; set; }
 
         [Required]
         public DateTime Created { get; set; }
 
-        public ICollection<OrderRow> OrderRows { get; set; }
+        public ICollection<OrderRow>? OrderRows { get; set; }
     }
 
 }

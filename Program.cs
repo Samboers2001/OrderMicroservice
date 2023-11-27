@@ -1,6 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using OrderMicroservice.AsyncDataServices;
+using OrderMicroservice.AsyncDataServices.Implementations;
+using OrderMicroservice.AsyncDataServices.Interfaces;
+using OrderMicroservice.AsyncDataServices.Subscriber;
 using OrderMicroservice.Data;
+using OrderMicroservice.Data.Interfaces;
+using OrderMicroservice.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
@@ -16,6 +20,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IMessageBusClient, MessageBusClient>();
+builder.Services.AddScoped<IOrderRepo, OrderRepo>();
+builder.Services.AddHostedService<MessageBusSubscriber>();
+
 
 var app = builder.Build();
 
