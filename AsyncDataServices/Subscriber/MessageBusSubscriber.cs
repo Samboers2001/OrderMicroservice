@@ -76,6 +76,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             var order = new Order
             {
                 CustomerId = userRegisteredEvent.UserId,
+                Created = DateTime.UtcNow
             };
 
             orderRepository.CreateOrder(order);
