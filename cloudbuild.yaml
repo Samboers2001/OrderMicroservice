@@ -11,6 +11,37 @@ steps:
     - 'push'
     - 'gcr.io/ordering-system-404411/ordermicroservice:latest'
 
+    # Apply Kubernetes manifests for the order database
+- name: 'gcr.io/cloud-builders/kubectl'
+  args:
+    - 'apply'
+    - '-f'
+    - 'K8S/order-database/mariadb-order-secret.yaml'
+
+  env:
+    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=ordering-system-autopilot-cluster'
+
+- name: 'gcr.io/cloud-builders/kubectl'
+  args:
+    - 'apply'
+    - '-f'
+    - 'K8S/order-database/order-mariadb-gke-pvc.yaml'
+
+  env:
+    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=ordering-system-autopilot-cluster'
+
+- name: 'gcr.io/cloud-builders/kubectl'
+  args:
+    - 'apply'
+    - '-f'
+    - 'K8S/order-database/mariadb-order-depl.yaml'
+
+  env:
+    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=ordering-system-autopilot-cluster'
+
 
 - name: 'gcr.io/cloud-builders/kubectl'
   args:
