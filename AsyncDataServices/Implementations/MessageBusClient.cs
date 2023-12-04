@@ -1,9 +1,10 @@
 using System.Text;
 using System.Text.Json;
+using OrderMicroservice.AsyncDataServices.Interfaces;
 using OrderMicroservice.Dtos;
 using RabbitMQ.Client;
 
-namespace OrderMicroservice.AsyncDataServices
+namespace OrderMicroservice.AsyncDataServices.Implementations
 {
     public class MessageBusClient : IMessageBusClient
     {

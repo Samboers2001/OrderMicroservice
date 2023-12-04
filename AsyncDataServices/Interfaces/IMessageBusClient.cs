@@ -1,5 +1,5 @@
 using OrderMicroservice.Dtos;
-namespace OrderMicroservice.AsyncDataServices
+namespace OrderMicroservice.AsyncDataServices.Interfaces
 {
     public interface IMessageBusClient
     {
