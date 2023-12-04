@@ -20,7 +20,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
         public MessageBusSubscriber(IConfiguration configuration, IServiceScopeFactory scopeFactory)
         {
             _configuration = configuration;
-             _scopeFactory =  scopeFactory;
+            _scopeFactory = scopeFactory;
             InitializeRabbitMQ();
         }
 
@@ -34,9 +34,9 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
 
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
-            _channel.ExchangeDeclare(exchange: "trigger", type: ExchangeType.Fanout);
+            _channel.ExchangeDeclare(exchange: "topic-exchange", type: ExchangeType.Topic);
             _queueName = _channel.QueueDeclare().QueueName;
-            _channel.QueueBind(queue: _queueName, exchange: "trigger", routingKey: "");
+            _channel.QueueBind(queue: _queueName, exchange: "topic-exchange", routingKey: "user.*");
 
             Console.WriteLine("--> Listening on the Message Bus...");
 
@@ -56,11 +56,17 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
                     IOrderRepo scopedOrderRepo = scope.ServiceProvider.GetRequiredService<IOrderRepo>();
                     byte[] body = ea.Body.ToArray();
                     string serializedMessage = Encoding.UTF8.GetString(body);
-
-                    var userRegisteredEvent = JsonSerializer.Deserialize<UserRegisteredEvent>(serializedMessage);
-
-                    await ProcessUserRegisteredEvent(userRegisteredEvent, scopedOrderRepo);
-                    _channel.BasicAck(ea.DeliveryTag, false);
+                    if (ea.RoutingKey == "user.registered")
+                    {
+                        var userRegisteredEvent = JsonSerializer.Deserialize<UserRegisteredEvent>(serializedMessage);
+                        await ProcessUserRegisteredEvent(userRegisteredEvent, scopedOrderRepo);
+                        _channel.BasicAck(ea.DeliveryTag, false);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Received a message with unexpected routing key: {ea.RoutingKey}");
+                        _channel.BasicNack(ea.DeliveryTag, false, false);
+                    }
                 }
             };
 
