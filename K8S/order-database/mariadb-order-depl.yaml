@@ -37,7 +37,7 @@ metadata:
   name: mariadb-order-clusterip-srv
   namespace: ordering-system
 spec:
-  type: ClusterIP
+  type: ClusterIP 
   selector:
     app: mariadb-order
   ports:
