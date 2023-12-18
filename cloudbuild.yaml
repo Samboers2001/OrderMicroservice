@@ -19,7 +19,7 @@ steps:
     - 'K8S/order-database/mariadb-order-secret.yaml'
 
   env:
-    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4-a'
+    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
     - 'CLOUDSDK_CONTAINER_CLUSTER=os-sam'
 
 - name: 'gcr.io/cloud-builders/kubectl'
@@ -29,7 +29,7 @@ steps:
     - 'K8S/order-database/order-mariadb-gke-pvc.yaml'
 
   env:
-    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4-a'
+    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
     - 'CLOUDSDK_CONTAINER_CLUSTER=os-sam'
 
 - name: 'gcr.io/cloud-builders/kubectl'
@@ -39,7 +39,7 @@ steps:
     - 'K8S/order-database/mariadb-order-depl.yaml'
 
   env:
-    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4-a'
+    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
     - 'CLOUDSDK_CONTAINER_CLUSTER=os-sam'
 
 
@@ -50,7 +50,7 @@ steps:
     - 'K8S/order-service/order-depl.yaml'
 
   env:
-    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4-a'
+    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
     - 'CLOUDSDK_CONTAINER_CLUSTER=os-sam' 
 
 - name: 'gcr.io/cloud-builders/kubectl'
@@ -63,7 +63,7 @@ steps:
       - 'ordering-system'
 
   env:
-    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4-a'
+    - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
     - 'CLOUDSDK_CONTAINER_CLUSTER=os-sam'
 
 images: ['gcr.io/ordering-system-404411/ordermicroservice:latest']
