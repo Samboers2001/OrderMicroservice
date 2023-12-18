@@ -59,9 +59,6 @@ steps:
       - 'restart'
       - 'deployment'
       - 'order-depl'
-      - '-n' 
-      - 'ordering-system'
-
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
     - 'CLOUDSDK_CONTAINER_CLUSTER=os-sam'
