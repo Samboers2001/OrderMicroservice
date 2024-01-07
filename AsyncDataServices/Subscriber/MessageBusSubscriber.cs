@@ -34,7 +34,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
         
         }
 
-        private void InitializeRabbitMQ()
+        private void InitializeRabbitMQ() 
         {
             var factory = new ConnectionFactory()
             {
