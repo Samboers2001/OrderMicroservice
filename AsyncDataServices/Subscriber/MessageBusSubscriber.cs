@@ -31,8 +31,16 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
                 _configuration = configuration;
                 _scopeFactory = scopeFactory;
                 var redisConnectionString = "localhost:6379";
-                var redisMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
-                _redLockFactory = RedLockFactory.Create(new[] { new RedLockMultiplexer(redisMultiplexer) });
+                try
+                {
+                    var redisMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
+                    _redLockFactory = RedLockFactory.Create(new[] { new RedLockMultiplexer(redisMultiplexer) });
+                }
+                catch (Exception ex)
+                {
+                    // Log or handle the exception appropriately
+                    Console.WriteLine($"Error connecting to Redis: {ex.Message}");
+                }
                 InitializeRabbitMQ();
             }
             catch (Exception ex)
@@ -62,52 +70,52 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             _connection.ConnectionShutdown += RabbitMQ_ConnectionShutdown;
         }
 
-protected override Task ExecuteAsync(CancellationToken stoppingToken)
-{
-    try
-    {
-        stoppingToken.ThrowIfCancellationRequested();
-
-        if (_channel == null || _channel.IsClosed)
-        {
-            Console.WriteLine("Error: RabbitMQ channel is null or closed.");
-            return Task.CompletedTask;
-        }
-
-        var consumer = new EventingBasicConsumer(_channel);
-
-        consumer.Received += async (ModuleHandle, ea) =>
+        protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
             try
             {
-                // ... (omitted for brevity)
+                stoppingToken.ThrowIfCancellationRequested();
 
-                if (_channel != null && _channel.IsOpen)  // Check if the channel is open
-                {
-                    _channel.BasicConsume(queue: _queueName, autoAck: false, consumer: consumer);
-                }
-                else
+                if (_channel == null || _channel.IsClosed)
                 {
                     Console.WriteLine("Error: RabbitMQ channel is null or closed.");
+                    return Task.CompletedTask;
                 }
+
+                var consumer = new EventingBasicConsumer(_channel);
+
+                consumer.Received += async (ModuleHandle, ea) =>
+                {
+                    try
+                    {
+                        // ... (omitted for brevity)
+
+                        if (_channel != null && _channel.IsOpen)  // Check if the channel is open
+                        {
+                            _channel.BasicConsume(queue: _queueName, autoAck: false, consumer: consumer);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Error: RabbitMQ channel is null or closed.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Log the exception with additional details
+                        Console.WriteLine($"Error in Received event handler: {ex.Message}");
+                    }
+                };
+
+                _channel.BasicConsume(queue: _queueName, autoAck: false, consumer: consumer);
             }
             catch (Exception ex)
             {
                 // Log the exception with additional details
-                Console.WriteLine($"Error in Received event handler: {ex.Message}");
+                Console.WriteLine($"Error in ExecuteAsync: {ex.Message}");
             }
-        };
 
-        _channel.BasicConsume(queue: _queueName, autoAck: false, consumer: consumer);
-    }
-    catch (Exception ex)
-    {
-        // Log the exception with additional details
-        Console.WriteLine($"Error in ExecuteAsync: {ex.Message}");
-    }
-
-    return Task.CompletedTask;
-}
+            return Task.CompletedTask;
+        }
 
 
         private async Task ProcessUserRegisteredEvent(UserRegisteredEvent userRegisteredEvent, IOrderRepo orderRepository)
