@@ -30,7 +30,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             {
                 _configuration = configuration;
                 _scopeFactory = scopeFactory;
-                var redisConnectionString = "localhost:6379";
+                var redisConnectionString = "localhost:6379,abortConnect=false";
                 try
                 {
                     var redisMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
