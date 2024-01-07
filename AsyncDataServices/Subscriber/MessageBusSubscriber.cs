@@ -111,6 +111,14 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             Console.WriteLine("--> Processing UserRegisteredEvent");
             Console.WriteLine($"--> UserId: {userRegisteredEvent.UserId}");
 
+            // Check if an order already exists for this user
+            var existingOrder = orderRepository.GetOrderByCustomerId(userRegisteredEvent.UserId);
+            if (existingOrder != null)
+            {
+                Console.WriteLine($"--> Order already exists for UserId: {userRegisteredEvent.UserId}");
+                return;
+            }
+
             var order = new Models.Order
             {
                 CustomerId = userRegisteredEvent.UserId,
@@ -118,9 +126,12 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             };
 
             orderRepository.CreateOrder(order);
+            // Ensure to save the changes to the database
+            await orderRepository.SaveChangesAsync();
 
-            Console.WriteLine("--> Empty row created in the Order table.");
+            Console.WriteLine("--> Order created for UserId: {userRegisteredEvent.UserId}");
         }
+
 
         private void SendAcknowledgment(string userId)
         {

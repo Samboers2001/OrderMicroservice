@@ -16,5 +16,24 @@ namespace OrderMicroservice.Data.Repositories
             _context.Orders.Add(order);
             _context.SaveChanges();
         }
+
+        public Order GetOrderByCustomerId(string userId)
+        {
+            return _context.Orders.FirstOrDefault(o => o.CustomerId == userId);
+        }
+
+        public async Task<bool> SaveChangesAsync()
+        {
+            try
+            {
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception)
+            {
+                // Handle any exceptions that occur during saving changes
+                return false;
+            }
+        }
     }
 }
