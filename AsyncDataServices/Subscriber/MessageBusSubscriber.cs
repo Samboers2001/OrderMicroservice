@@ -43,7 +43,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
                 }
                 InitializeRabbitMQ();
             }
-            catch (Exception ex)
+            catch (Exception ex) 
             {
                 // Log or handle the exception appropriately
                 Console.WriteLine($"Error connecting to Redis: {ex.Message}");
