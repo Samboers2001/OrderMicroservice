@@ -3,18 +3,15 @@ using System.Text;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration; // Ensure you have this namespace imported
-using Microsoft.Extensions.DependencyInjection; // Ensure you have this namespace imported
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OrderMicroservice.MessageBusEvents;
 using OrderMicroservice.Data.Interfaces;
 using OrderMicroservice.Models;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using RedLockNet;
-using RedLockNet.SERedis;
 using StackExchange.Redis;
-using RedLockNet.SERedis.Configuration;
 
 namespace OrderMicroservice.AsyncDataServices.Subscriber
 {
@@ -24,8 +21,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
         private IModel _channel;
         private string _queueName;
         private readonly IServiceScopeFactory _scopeFactory;
-        private IOrderRepo orderRepository => _scopeFactory.CreateScope().ServiceProvider.GetRequiredService<IOrderRepo>();
-        private readonly RedLockFactory _redLockFactory;
+        private IOrderRepo OrderRepository => _scopeFactory.CreateScope().ServiceProvider.GetRequiredService<IOrderRepo>();
         private readonly IConfiguration _configuration;
 
         public MessageBusSubscriber(IConfiguration configuration, IServiceScopeFactory scopeFactory)
@@ -35,21 +31,10 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
                 _configuration = configuration;
                 _scopeFactory = scopeFactory;
                 var redisConnectionString = "localhost:6379,abortConnect=false";
-                try
-                {
-                    var redisMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
-                    _redLockFactory = RedLockFactory.Create(new[] { new RedLockMultiplexer(redisMultiplexer) });
-                }
-                catch (Exception ex)
-                {
-                    // Log or handle the exception appropriately
-                    Console.WriteLine($"Error connecting to Redis: {ex.Message}");
-                }
                 InitializeRabbitMQ();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-                // Log or handle the exception appropriately
                 Console.WriteLine($"Error connecting to Redis: {ex.Message}");
             }
         }
@@ -77,35 +62,31 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
         {
             stoppingToken.ThrowIfCancellationRequested();
 
+            // Create a new instance of AcknowledgmentHandler
+            var acknowledgmentHandler = new AcknowledgmentHandler(_configuration, _scopeFactory);
+            acknowledgmentHandler.Start();
+
             var consumer = new EventingBasicConsumer(_channel);
 
             consumer.Received += async (ModuleHandle, ea) =>
             {
                 try
                 {
-                    // Get message body
                     byte[] body = ea.Body.ToArray();
                     string serializedMessage = Encoding.UTF8.GetString(body);
 
-                    // Deserialize message
                     if (ea.RoutingKey == "user.registered")
                     {
                         var userRegisteredEvent = JsonSerializer.Deserialize<UserRegisteredEvent>(serializedMessage);
 
-                        using (var redLock = await _redLockFactory.CreateLockAsync("user.registered", TimeSpan.FromSeconds(30)))
-                        {
-                            if (redLock.IsAcquired)
-                            {
-                                // Process the message
-                                await ProcessUserRegisteredEvent(userRegisteredEvent, orderRepository);
-                                _channel.BasicAck(ea.DeliveryTag, false);
-                            }
-                            else
-                            {
-                                Console.WriteLine("--> Could not acquire lock. Skipping duplicate processing.");
-                                _channel.BasicNack(ea.DeliveryTag, false, false);
-                            }
-                        }
+                        // Process the message
+                        await ProcessUserRegisteredEvent(userRegisteredEvent, OrderRepository);
+
+                        // Send acknowledgment
+                        SendAcknowledgment(userRegisteredEvent.UserId);
+
+                        // Acknowledge the original message
+                        _channel.BasicAck(ea.DeliveryTag, false);
                     }
                     else
                     {
@@ -115,7 +96,6 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
                 }
                 catch (Exception ex)
                 {
-                    // Log the exception with additional details
                     Console.WriteLine($"Error in Received event handler: {ex.Message}");
                 }
             };
@@ -123,7 +103,6 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             // Start consuming messages
             _channel.BasicConsume(queue: _queueName, autoAck: false, consumer: consumer);
 
-            // Return a completed task
             return Task.CompletedTask;
         }
 
@@ -143,9 +122,59 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             Console.WriteLine("--> Empty row created in the Order table.");
         }
 
+        private void SendAcknowledgment(string userId)
+        {
+            using (var acknowledgmentChannel = _connection.CreateModel())
+            {
+                acknowledgmentChannel.ExchangeDeclare(exchange: "ack-exchange", type: ExchangeType.Fanout);
+
+                var acknowledgmentMessage = Encoding.UTF8.GetBytes($"Acknowledgment for {userId}");
+                acknowledgmentChannel.BasicPublish(exchange: "ack-exchange", routingKey: "", basicProperties: null, body: acknowledgmentMessage);
+            }
+        }
+
         private void RabbitMQ_ConnectionShutdown(object sender, ShutdownEventArgs e)
         {
             Console.WriteLine("--> RabbitMQ Connection Shutdown");
+        }
+    }
+
+    public class AcknowledgmentHandler
+    {
+        private IConnection _connection;
+        private IModel _channel;
+        private readonly IServiceScopeFactory _scopeFactory;
+        private readonly IConfiguration _configuration;
+
+        public AcknowledgmentHandler(IConfiguration configuration, IServiceScopeFactory scopeFactory)
+        {
+            _configuration = configuration;
+            _scopeFactory = scopeFactory;
+        }
+
+        public void Start()
+        {
+            var factory = new ConnectionFactory()
+            {
+                HostName = _configuration["RabbitMQHost"],
+                Port = int.Parse(_configuration["RabbitMQPort"])
+            };
+
+            _connection = factory.CreateConnection();
+            _channel = _connection.CreateModel();
+            _channel.ExchangeDeclare(exchange: "ack-exchange", type: ExchangeType.Fanout);
+
+            var acknowledgmentQueueName = _channel.QueueDeclare().QueueName;
+            _channel.QueueBind(queue: acknowledgmentQueueName, exchange: "ack-exchange", routingKey: "");
+
+            var consumer = new EventingBasicConsumer(_channel);
+
+            consumer.Received += (ModuleHandle, ea) =>
+            {
+                Console.WriteLine($"Received acknowledgment: {Encoding.UTF8.GetString(ea.Body.ToArray())}");
+            };
+
+            _channel.BasicConsume(queue: acknowledgmentQueueName, autoAck: true, consumer: consumer);
         }
     }
 }
