@@ -25,7 +25,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
         private readonly IConfiguration _configuration;
 
         public MessageBusSubscriber(IConfiguration configuration)
-        {
+        { 
             _configuration = configuration;
             var redisConnectionString = "localhost:6379"; 
             var redisMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
