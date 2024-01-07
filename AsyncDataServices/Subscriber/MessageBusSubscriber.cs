@@ -17,24 +17,32 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
 {
     public class MessageBusSubscriber : BackgroundService
     {
-        private  IConnection _connection;
-        private  IModel _channel;
-        private  string _queueName;
+        private IConnection _connection;
+        private IModel _channel;
+        private string _queueName;
         private readonly IServiceScopeFactory _scopeFactory;
         private readonly RedLockFactory _redLockFactory;
         private readonly IConfiguration _configuration;
 
         public MessageBusSubscriber(IConfiguration configuration)
-        { 
-            _configuration = configuration;
-            var redisConnectionString = "localhost:6379"; 
-            var redisMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
-            _redLockFactory = RedLockFactory.Create(new[] { new RedLockMultiplexer(redisMultiplexer) });
-            InitializeRabbitMQ();
-        
+        {
+            try
+            {
+                _configuration = configuration;
+                var redisConnectionString = "localhost:6379";
+                var redisMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
+                _redLockFactory = RedLockFactory.Create(new[] { new RedLockMultiplexer(redisMultiplexer) });
+                InitializeRabbitMQ();
+            }
+            catch (Exception ex)
+            {
+                // Log or handle the exception appropriately
+                Console.WriteLine($"Error connecting to Redis: {ex.Message}");
+            }
         }
 
-        private void InitializeRabbitMQ() 
+
+        private void InitializeRabbitMQ()
         {
             var factory = new ConnectionFactory()
             {
