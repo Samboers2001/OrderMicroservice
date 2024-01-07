@@ -16,6 +16,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
         private IModel _channel;
         private string _queueName;
         private readonly IServiceScopeFactory _scopeFactory;
+        private bool isProcessingEvent = false;
 
         public MessageBusSubscriber(IConfiguration configuration, IServiceScopeFactory scopeFactory)
         {
@@ -79,6 +80,16 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             Console.WriteLine("--> Processing UserRegisteredEvent");
             Console.WriteLine($"--> UserId: {userRegisteredEvent.UserId}");
 
+            if (isProcessingEvent)
+            {
+                Console.WriteLine("--> UserRegisteredEvent is already being processed. Skipping duplicate processing.");
+                return;
+            }
+
+            isProcessingEvent = true;
+
+            try
+            {
             var order = new Order
             {
                 CustomerId = userRegisteredEvent.UserId,
@@ -88,6 +99,11 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             orderRepository.CreateOrder(order);
 
             Console.WriteLine("--> Empty row created in the Order table.");
+            }
+            finally
+            {
+                isProcessingEvent = false;
+            }
 
         }
 
