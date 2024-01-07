@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-depl
+  namespace: ordering-system
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: ordermicroservice
+  template:
+    metadata:
+      labels:
+        app: ordermicroservice
+    spec:
+      containers:
+        - name: ordermicroservice
+          image: samboers/ordermicroservice:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-clusterip-srv
+  namespace: ordering-system
+spec:
+  type: ClusterIP
+  selector:
+    app: ordermicroservice
+  ports:
+  - name: ordermicroservice
+    protocol: TCP
+    port: 80
+    targetPort: 80

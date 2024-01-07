@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mariadb-order-depl
+  namespace: ordering-system
+spec:
+  selector:
+    matchLabels:
+      app: mariadb-order
+  template:
+    metadata:
+      labels:
+        app: mariadb-order
+    spec:
+      containers:
+      - name: mariadb
+        image: mariadb
+        ports:
+        - containerPort: 3306
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mariadb-order-secret
+              key: mariadb-root-password
+        volumeMounts:
+        - mountPath: /var/lib/mysql
+          name: mariadb-order-volume
+      volumes:
+      - name: mariadb-order-volume
+        persistentVolumeClaim:
+          claimName: mariadb-order-claim
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mariadb-order-clusterip-srv
+  namespace: ordering-system
+spec:
+  type: ClusterIP
+  selector:
+    app: mariadb-order
+  ports:
+  - name: mariadb
+    protocol: TCP
+    port: 3307
+    targetPort: 3306
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mariadb-loadbalancer
+  namespace: ordering-system
+spec:
+  type: LoadBalancer
+  selector:
+    app: mariadb-order
+  ports:
+  - protocol: TCP
+    port: 3307
+    targetPort: 3306

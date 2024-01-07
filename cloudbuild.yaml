@@ -16,7 +16,7 @@ steps:
   args:
     - 'apply'
     - '-f'
-    - 'K8S/order-database/mariadb-order-secret.yaml'
+    - 'K8S/GKE/order-database/mariadb-order-secret.yaml'
 
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
@@ -26,7 +26,7 @@ steps:
   args:
     - 'apply'
     - '-f'
-    - 'K8S/order-database/order-mariadb-gke-pvc.yaml'
+    - 'K8S/GKE/order-database/order-mariadb-gke-pvc.yaml'
 
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
@@ -36,7 +36,7 @@ steps:
   args:
     - 'apply'
     - '-f'
-    - 'K8S/order-database/mariadb-order-depl.yaml'
+    - 'K8S/GKE/order-database/mariadb-order-depl.yaml'
 
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
@@ -47,7 +47,7 @@ steps:
   args:
     - 'apply'
     - '-f'
-    - 'K8S/order-service/order-depl.yaml'
+    - 'K8S/GKE/order-service/order-depl.yaml'
 
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
