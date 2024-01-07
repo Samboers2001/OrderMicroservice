@@ -1,33 +1,42 @@
+using System;
 using System.Text;
 using System.Text.Json;
+using System.Threading.Tasks;
 using OrderMicroservice.MessageBusEvents;
 using OrderMicroservice.Data.Interfaces;
 using OrderMicroservice.Data.Repositories;
 using OrderMicroservice.Models;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using RedLockNet;
+using RedLockNet.SERedis;
+using StackExchange.Redis;
+using RedLockNet.SERedis.Configuration;
 
 namespace OrderMicroservice.AsyncDataServices.Subscriber
 {
     public class MessageBusSubscriber : BackgroundService
     {
-        private readonly IConfiguration _configuration;
-        private IConnection _connection;
-        private IModel _channel;
-        private string _queueName;
+        private  IConnection _connection;
+        private  IModel _channel;
+        private  string _queueName;
         private readonly IServiceScopeFactory _scopeFactory;
-        private bool isProcessingEvent = false;
+        private readonly RedLockFactory _redLockFactory;
+        private readonly IConfiguration _configuration;
 
-        public MessageBusSubscriber(IConfiguration configuration, IServiceScopeFactory scopeFactory)
+        public MessageBusSubscriber(IConfiguration configuration)
         {
             _configuration = configuration;
-            _scopeFactory = scopeFactory;
+            var redisConnectionString = "localhost:6379"; 
+            var redisMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
+            _redLockFactory = RedLockFactory.Create(new[] { new RedLockMultiplexer(redisMultiplexer) });
             InitializeRabbitMQ();
+        
         }
 
         private void InitializeRabbitMQ()
         {
-            ConnectionFactory factory = new ConnectionFactory()
+            var factory = new ConnectionFactory()
             {
                 HostName = _configuration["RabbitMQHost"],
                 Port = int.Parse(_configuration["RabbitMQPort"])
@@ -48,7 +57,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
         {
             stoppingToken.ThrowIfCancellationRequested();
 
-            EventingBasicConsumer consumer = new EventingBasicConsumer(_channel);
+            var consumer = new EventingBasicConsumer(_channel);
 
             consumer.Received += async (ModuleHandle, ea) =>
             {
@@ -57,11 +66,24 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
                     IOrderRepo scopedOrderRepo = scope.ServiceProvider.GetRequiredService<IOrderRepo>();
                     byte[] body = ea.Body.ToArray();
                     string serializedMessage = Encoding.UTF8.GetString(body);
+
                     if (ea.RoutingKey == "user.registered")
                     {
                         var userRegisteredEvent = JsonSerializer.Deserialize<UserRegisteredEvent>(serializedMessage);
-                        await ProcessUserRegisteredEvent(userRegisteredEvent, scopedOrderRepo);
-                        _channel.BasicAck(ea.DeliveryTag, false);
+
+                        using (var redLock = await _redLockFactory.CreateLockAsync("user.registered", TimeSpan.FromSeconds(30)))
+                        {
+                            if (redLock.IsAcquired)
+                            {
+                                await ProcessUserRegisteredEvent(userRegisteredEvent, scopedOrderRepo);
+                                _channel.BasicAck(ea.DeliveryTag, false);
+                            }
+                            else
+                            {
+                                Console.WriteLine("--> Could not acquire lock. Skipping duplicate processing.");
+                                _channel.BasicNack(ea.DeliveryTag, false, false);
+                            }
+                        }
                     }
                     else
                     {
@@ -80,17 +102,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             Console.WriteLine("--> Processing UserRegisteredEvent");
             Console.WriteLine($"--> UserId: {userRegisteredEvent.UserId}");
 
-            if (isProcessingEvent)
-            {
-                Console.WriteLine("--> UserRegisteredEvent is already being processed. Skipping duplicate processing.");
-                return;
-            }
-
-            isProcessingEvent = true;
-
-            try
-            {
-            var order = new Order
+            var order = new Models.Order
             {
                 CustomerId = userRegisteredEvent.UserId,
                 Created = DateTime.UtcNow
@@ -99,12 +111,6 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             orderRepository.CreateOrder(order);
 
             Console.WriteLine("--> Empty row created in the Order table.");
-            }
-            finally
-            {
-                isProcessingEvent = false;
-            }
-
         }
 
         private void RabbitMQ_ConnectionShutdown(object sender, ShutdownEventArgs e)
