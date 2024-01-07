@@ -24,11 +24,12 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
         private readonly RedLockFactory _redLockFactory;
         private readonly IConfiguration _configuration;
 
-        public MessageBusSubscriber(IConfiguration configuration)
+        public MessageBusSubscriber(IConfiguration configuration, IServiceScopeFactory scopeFactory)
         {
             try
             {
                 _configuration = configuration;
+                _scopeFactory = scopeFactory;
                 var redisConnectionString = "localhost:6379";
                 var redisMultiplexer = ConnectionMultiplexer.Connect(redisConnectionString);
                 _redLockFactory = RedLockFactory.Create(new[] { new RedLockMultiplexer(redisMultiplexer) });
