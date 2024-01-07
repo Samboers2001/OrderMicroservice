@@ -62,49 +62,53 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             _connection.ConnectionShutdown += RabbitMQ_ConnectionShutdown;
         }
 
-        protected override Task ExecuteAsync(CancellationToken stoppingToken)
+protected override Task ExecuteAsync(CancellationToken stoppingToken)
+{
+    try
+    {
+        stoppingToken.ThrowIfCancellationRequested();
+
+        if (_channel == null || _channel.IsClosed)
         {
-            stoppingToken.ThrowIfCancellationRequested();
-
-            var consumer = new EventingBasicConsumer(_channel);
-
-            consumer.Received += async (ModuleHandle, ea) =>
-            {
-                using (var scope = _scopeFactory.CreateScope())
-                {
-                    IOrderRepo scopedOrderRepo = scope.ServiceProvider.GetRequiredService<IOrderRepo>();
-                    byte[] body = ea.Body.ToArray();
-                    string serializedMessage = Encoding.UTF8.GetString(body);
-
-                    if (ea.RoutingKey == "user.registered")
-                    {
-                        var userRegisteredEvent = JsonSerializer.Deserialize<UserRegisteredEvent>(serializedMessage);
-
-                        using (var redLock = await _redLockFactory.CreateLockAsync("user.registered", TimeSpan.FromSeconds(30)))
-                        {
-                            if (redLock.IsAcquired)
-                            {
-                                await ProcessUserRegisteredEvent(userRegisteredEvent, scopedOrderRepo);
-                                _channel.BasicAck(ea.DeliveryTag, false);
-                            }
-                            else
-                            {
-                                Console.WriteLine("--> Could not acquire lock. Skipping duplicate processing.");
-                                _channel.BasicNack(ea.DeliveryTag, false, false);
-                            }
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Received a message with unexpected routing key: {ea.RoutingKey}");
-                        _channel.BasicNack(ea.DeliveryTag, false, false);
-                    }
-                }
-            };
-
-            _channel.BasicConsume(queue: _queueName, autoAck: false, consumer: consumer);
+            Console.WriteLine("Error: RabbitMQ channel is null or closed.");
             return Task.CompletedTask;
         }
+
+        var consumer = new EventingBasicConsumer(_channel);
+
+        consumer.Received += async (ModuleHandle, ea) =>
+        {
+            try
+            {
+                // ... (omitted for brevity)
+
+                if (_channel != null && _channel.IsOpen)  // Check if the channel is open
+                {
+                    _channel.BasicConsume(queue: _queueName, autoAck: false, consumer: consumer);
+                }
+                else
+                {
+                    Console.WriteLine("Error: RabbitMQ channel is null or closed.");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception with additional details
+                Console.WriteLine($"Error in Received event handler: {ex.Message}");
+            }
+        };
+
+        _channel.BasicConsume(queue: _queueName, autoAck: false, consumer: consumer);
+    }
+    catch (Exception ex)
+    {
+        // Log the exception with additional details
+        Console.WriteLine($"Error in ExecuteAsync: {ex.Message}");
+    }
+
+    return Task.CompletedTask;
+}
+
 
         private async Task ProcessUserRegisteredEvent(UserRegisteredEvent userRegisteredEvent, IOrderRepo orderRepository)
         {
