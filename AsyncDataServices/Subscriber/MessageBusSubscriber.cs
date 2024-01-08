@@ -49,14 +49,22 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
 
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
+
+            // Declare the exchange
             _channel.ExchangeDeclare(exchange: "topic-exchange", type: ExchangeType.Topic);
+
+            // Declare the queue
             _queueName = "SharedQueue";
+            _channel.QueueDeclare(queue: _queueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
+
+            // Bind the queue to the exchange
             _channel.QueueBind(queue: _queueName, exchange: "topic-exchange", routingKey: "user.*");
 
             Console.WriteLine("--> Listening on the Message Bus...");
 
             _connection.ConnectionShutdown += RabbitMQ_ConnectionShutdown;
         }
+
 
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
