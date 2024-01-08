@@ -50,7 +50,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             _connection = factory.CreateConnection();
             _channel = _connection.CreateModel();
             _channel.ExchangeDeclare(exchange: "topic-exchange", type: ExchangeType.Topic);
-            _queueName = _channel.QueueDeclare().QueueName;
+            _queueName = "SharedQueue";
             _channel.QueueBind(queue: _queueName, exchange: "topic-exchange", routingKey: "user.*");
 
             Console.WriteLine("--> Listening on the Message Bus...");
