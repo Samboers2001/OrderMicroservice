@@ -11,7 +11,25 @@ pipeline {
                 git 'https://github.com/Samboers2001/OrderMicroservice'
             }
         }
-        
+
+        stage('Checkout Test Project') {
+            steps {
+                git 'https://github.com/Samboers2001/OrderMicroservice.Tests'
+            }
+        }
+
+        stage('Restore and Test') {
+            steps {
+                script {
+                    dir('/Users/samboers/development/order_management_system/OrderMicroservice.Tests') {
+                        sh '/usr/local/share/dotnet/dotnet restore'
+                        sh '/usr/local/share/dotnet/dotnet test'
+                    }
+                }
+            }
+        }
+
+
         stage('Build docker image') {
             steps {
                 script {
