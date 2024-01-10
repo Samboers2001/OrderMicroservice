@@ -96,8 +96,9 @@ pipeline {
         stage('Load Testing') {
             steps {
                 script {
-                    sh 'mkdir -p /Users/samboers/JMeter/OrderLoadTestresultsHtmlReport'
-                    sh '/opt/homebrew/bin/jmeter -n -t /Users/samboers/JMeter/LoginThenOrderLoadTest.jmx -l /Users/samboers/JMeter/OrderLoadTestresults.csv -e -o /Users/samboers/JMeter/OrdeHtmlReport'
+                    sh 'rm -rf /Users/samboers/JMeter/OrderHtmlReport/*' 
+                    sh 'mkdir -p /Users/samboers/JMeter/OrderHtmlReport'
+                    sh '/opt/homebrew/bin/jmeter -n -t /Users/samboers/JMeter/LoginThenOrderLoadTest.jmx -l /Users/samboers/JMeter/OrderLoadTestresults.csv -e -o /Users/samboers/JMeter/OrderHtmlReport'
                 }
             }
         }
