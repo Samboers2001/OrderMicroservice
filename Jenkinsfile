@@ -81,5 +81,27 @@ pipeline {
                 }
             }
         }
+
+
+        stage('Wait for Deployment to be Ready') {
+            steps {
+                script {
+                    dir('/Users/samboers/development/order_management_system/OrderMicroservice') {
+                        sh 'kubectl wait --for=condition=available --timeout=60s deployment/order-depl'
+                    }
+                }
+            }
+        }
+
+        stage('Load Testing') {
+            steps {
+                script {
+                    sh 'mkdir -p /Users/samboers/JMeter/OrderLoadTestresultsHtmlReport'
+                    sh '/opt/homebrew/bin/jmeter -n -t /Users/samboers/JMeter/LoginThenOrderLoadTest.jmx -l /Users/samboers/JMeter/OrderLoadTestresults.csv -e -o /Users/samboers/JMeter/OrdeHtmlReport'
+                }
+            }
+        }
+
     }
+
 }
