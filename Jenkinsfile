@@ -33,7 +33,9 @@ pipeline {
         stage('Build docker image') {
             steps {
                 script {
-                    sh 'docker build -t samboers/ordermicroservice .'
+                    dir('/Users/samboers/development/order_management_system/OrderMicroservice') {
+                        sh 'docker build -t samboers/ordermicroservice .'
+                    }
                 }
             }
         }
@@ -52,18 +54,22 @@ pipeline {
         stage('Deploy Database to Kubernetes') {
             steps {
                 script {
-                    sh 'kubectl apply -f K8S/Local/order-database/mariadb-order-secret.yaml'
-                    sh 'kubectl apply -f K8S/Local/order-database/mariadb-order-claim.yaml' 
-                    sh 'kubectl apply -f K8S/Local/order-database/mariadb-order-depl.yaml'
+                    dir('/Users/samboers/development/order_management_system/OrderMicroservice/K8S/Local/order-database') {
+                        sh 'kubectl apply -f mariadb-order-secret.yaml'
+                        sh 'kubectl apply -f mariadb-order-claim.yaml'
+                        sh 'kubectl apply -f mariadb-order-depl.yaml'
+                    }
                 }
             }
         }
 
-        stage('Deploy AccountMicroservice to Kubernetes') {
+        stage('Deploy OrderMicroservice to Kubernetes') {
             steps {
                 script {
-                    sh 'kubectl apply -f K8S/Local/order-service/order-depl.yaml'
-                    sh 'kubectl apply -f K8S/Local/order-service/order-service-hpa.yaml'
+                    dir('/Users/samboers/development/order_management_system/OrderMicroservice/K8S/Local/order-service') {
+                        sh 'kubectl apply -f order-depl.yaml'
+                        sh 'kubectl apply -f order-service-hpa.yaml'
+                    }
                 }
             }
         }
