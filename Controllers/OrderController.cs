@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using OrderMicroservice.Data;
+using OrderMicroservice.Models;
 
 namespace OrderMircroservice.Controllers
 {
@@ -6,10 +8,18 @@ namespace OrderMircroservice.Controllers
     [Route("api/[controller]")]
     public class OrderController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult<string> Get()
+        private readonly AppDbContext _appDbContext;
+
+        public OrderController(AppDbContext appDbContext)
         {
-            return Ok("Hello from OrderController! And by the way this works too! And is changed now!");
+            _appDbContext = appDbContext;
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Order>> GetAllOrders()
+        {
+            IEnumerable<Order> orders = _appDbContext.Orders.ToList();
+            return Ok(orders);
         }
     }
 }
