@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using OrderMicroservice.Data;
+using OrderMicroservice.Data.Interfaces;
 using OrderMicroservice.Models;
 
 namespace OrderMircroservice.Controllers
@@ -8,17 +9,16 @@ namespace OrderMircroservice.Controllers
     [Route("api/[controller]")]
     public class OrderController : ControllerBase
     {
-        private readonly AppDbContext _appDbContext;
+        private readonly IOrderRepo _repository;
 
-        public OrderController(AppDbContext appDbContext)
+        public OrderController(IOrderRepo repository)
         {
-            _appDbContext = appDbContext;
+            _repository = repository;
         }
-
         [HttpGet]
         public ActionResult<IEnumerable<Order>> GetAllOrders()
         {
-            IEnumerable<Order> orders = _appDbContext.Orders.ToList();
+            var orders = _repository.GetAllOrders();
             return Ok(orders);
         }
     }

@@ -17,6 +17,11 @@ namespace OrderMicroservice.Data.Repositories
             _context.SaveChanges();
         }
 
+        public IEnumerable<Order> GetAllOrders()
+        {
+            return _context.Orders.ToList();
+        }
+
         public Order GetOrderByCustomerId(string userId)
         {
             return _context.Orders.FirstOrDefault(o => o.CustomerId == userId);
