@@ -105,7 +105,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
                         await ProcessProductCreated(productCreatedEvent, ProductRepository);
 
                         // Send acknowledgment
-                        SendAcknowledgment(productCreatedEvent.Id.ToString());
+                        SendAcknowledgment(productCreatedEvent.ExternalProductId.ToString());
 
                         // Acknowledge the original message
                         _channel.BasicAck(ea.DeliveryTag, false);
