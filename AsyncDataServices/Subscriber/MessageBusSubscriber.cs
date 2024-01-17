@@ -101,6 +101,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
                     else if (ea.RoutingKey == "product.created")
                     {
                         var productCreatedEvent = JsonSerializer.Deserialize<ProductCreatedEvent>(serializedMessage);
+                        Console.WriteLine(productCreatedEvent);
 
                         // Process the message
                         await ProcessProductCreated(productCreatedEvent, ProductRepository);
