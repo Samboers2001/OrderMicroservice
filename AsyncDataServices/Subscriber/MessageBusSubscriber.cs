@@ -156,19 +156,19 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
         private async Task ProcessProductCreated(ProductCreatedEvent productCreatedEvent, IProductRepo productRepository)
         {
             Console.WriteLine("--> Processing ProductCreatedEvent");
-            Console.WriteLine($"--> ProductId: {productCreatedEvent.Id}");
+            Console.WriteLine($"--> ProductId: {productCreatedEvent.ExternalProductId}");
 
             // Check if an order already exists for this user
-            var existingOrder = productRepository.GetProductById(productCreatedEvent.Id);
+            var existingOrder = productRepository.GetProductById(productCreatedEvent.ExternalProductId);
             if (existingOrder != null)
             {
-                Console.WriteLine($"--> Product already exists with Id: {productCreatedEvent.Id}");
+                Console.WriteLine($"--> Product already exists with Id: {productCreatedEvent.ExternalProductId}");
                 return;
             }
 
             var product = new Product
             {
-                ExternalProductId = productCreatedEvent.Id,
+                ExternalProductId = productCreatedEvent.ExternalProductId,
                 Created = DateTime.UtcNow
             };
 
@@ -176,7 +176,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             // Ensure to save the changes to the database
             await productRepository.SaveChangesAsync();
 
-            Console.WriteLine($"--> Order created for UserId: {productCreatedEvent.Id}");
+            Console.WriteLine($"--> Order created for UserId: {productCreatedEvent.ExternalProductId}");
         }
 
 
