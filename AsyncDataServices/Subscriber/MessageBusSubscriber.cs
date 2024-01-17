@@ -58,8 +58,9 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             _queueName = "SharedQueue";
             _channel.QueueDeclare(queue: _queueName, durable: true, exclusive: false, autoDelete: false, arguments: null);
 
-            // Bind the queue to the exchange
+            // Bind the queue to the exchange with wildcard routing key pattern
             _channel.QueueBind(queue: _queueName, exchange: "topic-exchange", routingKey: "user.*");
+            _channel.QueueBind(queue: _queueName, exchange: "topic-exchange", routingKey: "product.*");
 
             Console.WriteLine("--> Listening on the Message Bus...");
 
