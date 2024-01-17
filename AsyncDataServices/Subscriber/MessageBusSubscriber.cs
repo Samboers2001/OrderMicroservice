@@ -22,6 +22,7 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
         private string _queueName;
         private readonly IServiceScopeFactory _scopeFactory;
         private IOrderRepo OrderRepository => _scopeFactory.CreateScope().ServiceProvider.GetRequiredService<IOrderRepo>();
+        private IProductRepo ProductRepository => _scopeFactory.CreateScope().ServiceProvider.GetRequiredService<IProductRepo>();
         private readonly IConfiguration _configuration;
 
         public MessageBusSubscriber(IConfiguration configuration, IServiceScopeFactory scopeFactory)
@@ -96,7 +97,19 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
                         // Acknowledge the original message
                         _channel.BasicAck(ea.DeliveryTag, false);
                     }
-                    else
+                    else if (ea.RoutingKey == "product.created")
+                    {
+                        var productCreatedEvent = JsonSerializer.Deserialize<ProductCreatedEvent>(serializedMessage);
+
+                        // Process the message
+                        await ProcessProductCreated(productCreatedEvent, ProductRepository);
+
+                        // Send acknowledgment
+                        SendAcknowledgment(productCreatedEvent.Id.ToString());
+
+                        // Acknowledge the original message
+                        _channel.BasicAck(ea.DeliveryTag, false);
+                    } else
                     {
                         Console.WriteLine($"Received a message with unexpected routing key: {ea.RoutingKey}");
                         _channel.BasicNack(ea.DeliveryTag, false, false);
@@ -138,6 +151,32 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             await orderRepository.SaveChangesAsync();
 
             Console.WriteLine("--> Order created for UserId: {userRegisteredEvent.UserId}");
+        }
+
+        private async Task ProcessProductCreated(ProductCreatedEvent productCreatedEvent, IProductRepo productRepository)
+        {
+            Console.WriteLine("--> Processing ProductCreatedEvent");
+            Console.WriteLine($"--> ProductId: {productCreatedEvent.Id}");
+
+            // Check if an order already exists for this user
+            var existingOrder = productRepository.GetProductById(productCreatedEvent.Id);
+            if (existingOrder != null)
+            {
+                Console.WriteLine($"--> Product already exists with Id: {productCreatedEvent.Id}");
+                return;
+            }
+
+            var product = new Product
+            {
+                ExternalProductId = productCreatedEvent.Id,
+                Created = DateTime.UtcNow
+            };
+
+            productRepository.CreateProduct(product);
+            // Ensure to save the changes to the database
+            await productRepository.SaveChangesAsync();
+
+            Console.WriteLine($"--> Order created for UserId: {productCreatedEvent.Id}");
         }
 
 
