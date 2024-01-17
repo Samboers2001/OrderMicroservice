@@ -24,9 +24,9 @@ namespace OrderMicroservice.Data.Repositories
             _context.SaveChanges();
         }
 
-        public Task<Product> GetProductById(int productId)
+        public Product GetProductById(int productId)
         {
-            return _context.Products.FirstOrDefaultAsync(p => p.ExternalProductId == productId);
+            return _context.Products.FirstOrDefault(p => p.ExternalProductId == productId);
         }
 
         public async Task<bool> SaveChangesAsync()

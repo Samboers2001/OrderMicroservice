@@ -6,7 +6,7 @@ namespace OrderMicroservice.Data.Interfaces
     public interface IProductRepo
     {
         void CreateProduct(Product product);
-        Task<Product> GetProductById(int productId);
+        Product GetProductById(int productId);
         Task<bool> SaveChangesAsync();
     }
 }
