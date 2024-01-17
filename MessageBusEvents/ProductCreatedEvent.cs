@@ -2,6 +2,6 @@ namespace OrderMicroservice.MessageBusEvents
 {
     public class ProductCreatedEvent
     {
-        public int Id { get; set; }
+        public int ExternalProductId { get; set; }
     }
 }
