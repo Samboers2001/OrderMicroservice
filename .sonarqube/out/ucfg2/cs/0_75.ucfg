@@ -1,27 +1,17 @@
 
-0OrderMicroservice.Data.AppDbContext.Products.getd
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
-) 
-(,"0*Ö
-0
-- 
-(-Œ
-‰
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
-) 
-(,M
-%retEMicrosoft.EntityFrameworkCore.DbSet<OrderMicroservice.Models.Product>"__id*Ë
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
-) 
-(,c*a%
-#OrderMicroservice.Data.AppDbContext"8
-Products,Microsoft.EntityFrameworkCore.DbSet<TEntity>"·
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
-) 
-(,O
-M
-%retEMicrosoft.EntityFrameworkCore.DbSet<OrderMicroservice.Models.Product>B'%
-#OrderMicroservice.Data.AppDbContext
+.OrderMircroservice.WeatherForecast.Summary.getb
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs ( "0*«
+0! (!¢
+Ÿ
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs ( 
+%retstring?"__id*¡
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs ( ;*9$
+"OrderMircroservice.WeatherForecast"
+Summarystring"w
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs ( 
+
+%retstring?B&$
+"OrderMircroservice.WeatherForecast

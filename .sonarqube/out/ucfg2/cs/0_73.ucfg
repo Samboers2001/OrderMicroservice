@@ -1,17 +1,17 @@
 
-1OrderMicroservice.Data.AppDbContext.OrderRows.getd
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs	+ 	(."0*Ù
-0	/ 	(/Ž
-‹
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs	+ 	(.N
-%retFMicrosoft.EntityFrameworkCore.DbSet<OrderMicroservice.Models.OrderRow>"__id*Ì
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs	+ 	(.d*b%
-#OrderMicroservice.Data.AppDbContext"9
-	OrderRows,Microsoft.EntityFrameworkCore.DbSet<TEntity>"¸
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs	+ 	(.P
-N
-%retFMicrosoft.EntityFrameworkCore.DbSet<OrderMicroservice.Models.OrderRow>B'%
-#OrderMicroservice.Data.AppDbContext
+,OrderMicroservice.Models.Order.OrderRows.get_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5"0*Ê
+06 (6€
+ý
+_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5R
+%retJSystem.Collections.Generic.ICollection<OrderMicroservice.Models.OrderRow>?"__id*¿
+_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5\*Z 
+OrderMicroservice.Models.Order"6
+	OrderRows)System.Collections.Generic.ICollection<T>"·
+_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5T
+R
+%retJSystem.Collections.Generic.ICollection<OrderMicroservice.Models.OrderRow>?B" 
+OrderMicroservice.Models.Order

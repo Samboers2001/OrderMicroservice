@@ -1,16 +1,73 @@
 
-6OrderMicroservice.Dtos.MessagePublishedDto.Message.setk
-a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs% (("0*ã
-0) ()Î
-Ë
-k
-a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs% ((A,
-*OrderMicroservice.Dtos.MessagePublishedDto"
-Messagestring"__id*
-
-valuestring"‚
-k
-a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs% ((
-implicit return:
-valuestringB.,
-*OrderMicroservice.Dtos.MessagePublishedDtoX
+jOrderMicroservice.Controllers.MessageController.PublishMessage(OrderMicroservice.Dtos.MessagePublishedDto)p
+f/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/MessageController.cs (+"0*µ
+0 (z
+x
+ (+^
+8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto""
+<Message>k__BackingFieldstring"__entrypointi
+g
+ (+M
+8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto"
+Messagestring"__entrypoint©
+¦
+	 (
+%0"
+__annotate*JHF
+DMicrosoft.AspNetCore.Mvc.HttpPostAttribute.HttpPostAttribute(string)*<:
+8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto£
+ 
+- (5
+%1"
+__annotate*DB@
+>Microsoft.AspNetCore.Mvc.FromBodyAttribute.FromBodyAttribute()*<:
+8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDtoh
+f
+, (U8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto"__annotation*
+
+%0*
+
+%1*
+1*Æ
+1 (8½º
+ (;
+
+%2void"~OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient.PublishNewMessage(OrderMicroservice.Dtos.MessagePublishedDto)*š
+ (*Š1
+/OrderMicroservice.Controllers.MessageController"U
+_messageBusClient@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient*F
+0 (::
+8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto2=PublishNewMessage(OrderMicroservice.Dtos.MessagePublishedDto)ðí
+ (8-
+%3'Microsoft.AspNetCore.Mvc.OkObjectResult"3Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object?)*?
+ (31
+/OrderMicroservice.Controllers.MessageController*/
+ (7#!
+Message published successfully.2Ok(object?)
+}
+ (8.
+%ret&Microsoft.AspNetCore.Mvc.IActionResult"__id*;
+ (8/
+-
+%3'Microsoft.AspNetCore.Mvc.OkObjectResult*
+2*K
+2	 (	"<
+ (	0
+.
+%ret&Microsoft.AspNetCore.Mvc.IActionResult:D
+, (U8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDtoB31
+/OrderMicroservice.Controllers.MessageController

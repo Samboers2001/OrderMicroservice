@@ -1,16 +1,17 @@
 
-,OrderMicroservice.Models.Order.OrderRows.set_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs7 (:"0*†
-0; (;þ
-û
+*OrderMicroservice.Models.Order.OrderId.get_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs ( "0*“
+0! (!‘
+Ž
 _
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs7 (:Z 
-OrderMicroservice.Models.Order"6
-	OrderRows)System.Collections.Generic.ICollection<T>"__id*64
-2
-value)System.Collections.Generic.ICollection<T>"v
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs ( 
+%retint"__id*—
 _
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs7 (:
-implicit return:42
-value)System.Collections.Generic.ICollection<T>B" 
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs ( 4*2 
+OrderMicroservice.Models.Order"
+OrderIdint"p
+_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs ( 
+
+%retintB" 
 OrderMicroservice.Models.OrderX

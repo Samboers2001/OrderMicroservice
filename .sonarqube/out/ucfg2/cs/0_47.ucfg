@@ -1,17 +1,16 @@
 
-,OrderMicroservice.Models.Product.Created.geta
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	" 	(%"0*¿
-0	& 	(&¯
-¬
+,OrderMicroservice.Models.Product.Created.seta
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	' 	(*"0*Ö
+0	+ 	(+Ì
+É
 a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	" 	(%
-%retSystem.DateTime"__id*§
-a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	" 	(%B*@"
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	' 	(*@"
  OrderMicroservice.Models.Product"
-CreatedSystem.DateTime"~
+CreatedSystem.DateTime"__id*
+
+valueSystem.DateTime"x
 a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	" 	(%
-
-%retSystem.DateTimeB$"
- OrderMicroservice.Models.Product
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	' 	(*
+implicit return:
+valueSystem.DateTimeB$"
+ OrderMicroservice.Models.ProductX

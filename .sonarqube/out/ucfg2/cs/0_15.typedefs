@@ -1,7 +1,4 @@
-Ñ
-DOrderMicroservice.AsyncDataServices.Implementations.MessageBusClientobject@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClientÐ
-CMessageBusClient(Microsoft.Extensions.Configuration.IConfiguration)ˆOrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.MessageBusClient(Microsoft.Extensions.Configuration.IConfiguration)Ä
-=PublishNewMessage(OrderMicroservice.Dtos.MessagePublishedDto)‚OrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.PublishNewMessage(OrderMicroservice.Dtos.MessagePublishedDto)o
-SendMessage(string)XOrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.SendMessage(string)[
-	Dispose()NOrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.Dispose()Ö
-FRabbitMQ_ConnectionShutdown(object, RabbitMQ.Client.ShutdownEventArgs)‹OrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.RabbitMQ_ConnectionShutdown(object, RabbitMQ.Client.ShutdownEventArgs)
+ç
+8OrderMircroservice.Controllers.WeatherForecastController'Microsoft.AspNetCore.Mvc.ControllerBaseobject°
+yWeatherForecastController(Microsoft.Extensions.Logging.ILogger<OrderMircroservice.Controllers.WeatherForecastController>)²OrderMircroservice.Controllers.WeatherForecastController.WeatherForecastController(Microsoft.Extensions.Logging.ILogger<OrderMircroservice.Controllers.WeatherForecastController>)G
+Get()>OrderMircroservice.Controllers.WeatherForecastController.Get()

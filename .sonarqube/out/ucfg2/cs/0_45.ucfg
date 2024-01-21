@@ -1,16 +1,17 @@
 
-6OrderMicroservice.Models.Product.ExternalProductId.seta
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs, (/"0*È
-00 (0¾
-»
+,OrderMicroservice.Models.Product.Created.geta
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	" 	(%"0*¿
+0	& 	(&¯
+¬
 a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs, (/>"
- OrderMicroservice.Models.Product"
-ExternalProductIdint"__id*
-
-valueint"x
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	" 	(%
+%retSystem.DateTime"__id*§
 a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs, (/
-implicit return:
-valueintB$"
- OrderMicroservice.Models.ProductX
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	" 	(%B*@"
+ OrderMicroservice.Models.Product"
+CreatedSystem.DateTime"~
+a
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	" 	(%
+
+%retSystem.DateTimeB$"
+ OrderMicroservice.Models.Product

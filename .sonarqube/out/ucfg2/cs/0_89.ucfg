@@ -1,16 +1,48 @@
 
-LOrderMicroservice.MessageBusEvents.ProductCreatedEvent.ExternalProductId.setw
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs, (/"0*‹
-00 (0ê
-ç
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs, (/T8
-6OrderMicroservice.MessageBusEvents.ProductCreatedEvent"
-ExternalProductIdint"__id*
-
-valueint"Ž
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs, (/
-implicit return:
-valueintB:8
-6OrderMicroservice.MessageBusEvents.ProductCreatedEventX
+_OrderMicroservice.Data.Repositories.ProductRepo.CreateProduct(OrderMicroservice.Models.Product)p
+f/Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/ProductRepo.cs (!"0*
+0 (*
+1*
+1 (*
+2
+3*º
+2 (@NL
+ (@"
+%0System.ArgumentNullException"System.ArgumentNullException¹
+¶
+ (@"
+%1System.ArgumentNullException";System.ArgumentNullException.ArgumentNullException(string?)*0
+ (@$
+"
+%0System.ArgumentNullException*
+0 (?	
+product"
+ (	
+implicit return*ð
+3 (#ç
+ä
+ (2
+%2,Microsoft.EntityFrameworkCore.DbSet<TEntity>"0OrderMicroservice.Data.AppDbContext.Products.get*r
+ (f*d1
+/OrderMicroservice.Data.Repositories.ProductRepo"/
+_context#OrderMicroservice.Data.AppDbContextœ™
+ (*G
+%3AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"9Microsoft.EntityFrameworkCore.DbSet<TEntity>.Add(TEntity)*@
+ (4
+2
+%2,Microsoft.EntityFrameworkCore.DbSet<TEntity>*9
+" ()-
++
+product OrderMicroservice.Models.Product2Add(TEntity)ÒÏ
+ ("	
+%4int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*r
+ (f*d1
+/OrderMicroservice.Data.Repositories.ProductRepo"/
+_context#OrderMicroservice.Data.AppDbContext2SaveChanges()*
+4*.
+4	 (	"
+ (	
+implicit return:7
+" (1+
+product OrderMicroservice.Models.ProductB31
+/OrderMicroservice.Data.Repositories.ProductRepoX

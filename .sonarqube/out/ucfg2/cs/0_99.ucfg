@@ -1,48 +1,17 @@
 
-_OrderMicroservice.Data.Repositories.ProductRepo.CreateProduct(OrderMicroservice.Models.Product)p
-f/Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/ProductRepo.cs (!"0*
-0 (*
-1*
-1 (*
-2
-3*º
-2 (@NL
- (@"
-%0System.ArgumentNullException"System.ArgumentNullException¹
-¶
- (@"
-%1System.ArgumentNullException";System.ArgumentNullException.ArgumentNullException(string?)*0
- (@$
-"
-%0System.ArgumentNullException*
-0 (?	
-product"
- (	
-implicit return*ð
-3 (#ç
-ä
- (2
-%2,Microsoft.EntityFrameworkCore.DbSet<TEntity>"0OrderMicroservice.Data.AppDbContext.Products.get*r
- (f*d1
-/OrderMicroservice.Data.Repositories.ProductRepo"/
-_context#OrderMicroservice.Data.AppDbContextœ™
- (*G
-%3AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"9Microsoft.EntityFrameworkCore.DbSet<TEntity>.Add(TEntity)*@
- (4
-2
-%2,Microsoft.EntityFrameworkCore.DbSet<TEntity>*9
-" ()-
-+
-product OrderMicroservice.Models.Product2Add(TEntity)ÒÏ
- ("	
-%4int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*r
- (f*d1
-/OrderMicroservice.Data.Repositories.ProductRepo"/
-_context#OrderMicroservice.Data.AppDbContext2SaveChanges()*
-4*.
-4	 (	"
- (	
-implicit return:7
-" (1+
-product OrderMicroservice.Models.ProductB31
-/OrderMicroservice.Data.Repositories.ProductRepoX
+AOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserId.getw
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs (""0*ü
+0# (#Þ
+Û
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs ("
+%retstring"__id*É
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs ("N*L8
+6OrderMicroservice.MessageBusEvents.UserRegisteredEvent"
+UserIdstring"‹
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs ("
+
+%retstringB:8
+6OrderMicroservice.MessageBusEvents.UserRegisteredEvent

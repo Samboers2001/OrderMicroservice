@@ -1,10 +1,10 @@
 
-&OrderMicroservice.Models.Order.Order()_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs ("0*a
-0E
-C
+LOrderMicroservice.MessageBusEvents.ProductCreatedEvent.ProductCreatedEvent()w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs ($"0*y
+0]
+[
 
-%0void"object.Object()*$" 
-OrderMicroservice.Models.Order"
-implicit returnB" 
-OrderMicroservice.Models.OrderX
+%0void"object.Object()*<:8
+6OrderMicroservice.MessageBusEvents.ProductCreatedEvent"
+implicit returnB:8
+6OrderMicroservice.MessageBusEvents.ProductCreatedEventX

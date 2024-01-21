@@ -1,16 +1,17 @@
 
-.OrderMicroservice.Models.OrderRow.Quantity.setb
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs# (&"0*Â
-0' ('·
-´
+-OrderMicroservice.Models.OrderRow.Created.getb
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%"0*Ã
+0& (&²
+¯
 b
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs# (&6#
-!OrderMicroservice.Models.OrderRow"
-Quantityint"__id*
-
-valueint"y
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%
+%retSystem.DateTime"__id*©
 b
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs# (&
-implicit return:
-valueintB%#
-!OrderMicroservice.Models.OrderRowX
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%C*A#
+!OrderMicroservice.Models.OrderRow"
+CreatedSystem.DateTime"
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%
+
+%retSystem.DateTimeB%#
+!OrderMicroservice.Models.OrderRow

@@ -1,4 +1,5 @@
-‚
-.OrderMircroservice.Controllers.OrderController'Microsoft.AspNetCore.Mvc.ControllerBaseobject≠
-=OrderController(OrderMicroservice.Data.Interfaces.IOrderRepo)lOrderMircroservice.Controllers.OrderController.OrderController(OrderMicroservice.Data.Interfaces.IOrderRepo)O
-GetAllOrders()=OrderMircroservice.Controllers.OrderController.GetAllOrders()
+ù
+*OrderMicroservice.Dtos.MessagePublishedDtoobjectY
+MessagePublishedDto()@OrderMicroservice.Dtos.MessagePublishedDto.MessagePublishedDto()E
+Message.get6OrderMicroservice.Dtos.MessagePublishedDto.Message.getE
+Message.set6OrderMicroservice.Dtos.MessagePublishedDto.Message.set
