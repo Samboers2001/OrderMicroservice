@@ -1,10 +1,10 @@
 
-&OrderMicroservice.Models.Order.Order()_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs ("0*a
-0E
-C
+,OrderMicroservice.Models.OrderRow.OrderRow()b
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs ("0*d
+0H
+F
 
-%0void"object.Object()*$" 
-OrderMicroservice.Models.Order"
-implicit returnB" 
-OrderMicroservice.Models.OrderX
+%0void"object.Object()*'%#
+!OrderMicroservice.Models.OrderRow"
+implicit returnB%#
+!OrderMicroservice.Models.OrderRowX

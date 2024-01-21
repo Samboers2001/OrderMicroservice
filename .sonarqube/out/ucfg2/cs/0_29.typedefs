@@ -1,6 +1,6 @@
-ƒ
-4OrderMicroservice.Migrations.make_orderRows_nullable2Microsoft.EntityFrameworkCore.Migrations.Migrationobject³
-=Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)rOrderMicroservice.Migrations.make_orderRows_nullable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)·
-?Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)tOrderMicroservice.Migrations.make_orderRows_nullable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)±
-<BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)qOrderMicroservice.Migrations.make_orderRows_nullable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)k
-make_orderRows_nullable()NOrderMicroservice.Migrations.make_orderRows_nullable.make_orderRows_nullable()
+Ã
+=OrderMicroservice.Migrations.changed_customerId_int_to_string2Microsoft.EntityFrameworkCore.Migrations.Migrationobject¼
+=Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder){OrderMicroservice.Migrations.changed_customerId_int_to_string.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)À
+?Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)}OrderMicroservice.Migrations.changed_customerId_int_to_string.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)º
+<BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)zOrderMicroservice.Migrations.changed_customerId_int_to_string.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)†
+"changed_customerId_int_to_string()`OrderMicroservice.Migrations.changed_customerId_int_to_string.changed_customerId_int_to_string()

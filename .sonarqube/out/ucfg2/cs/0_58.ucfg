@@ -1,16 +1,16 @@
 
-.OrderMicroservice.Data.AppDbContext.Orders.setd
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs* (-"0*˜
-0. (.‹
-ˆ
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs* (-_%
-#OrderMicroservice.Data.AppDbContext"6
-Orders,Microsoft.EntityFrameworkCore.DbSet<TEntity>"__id*97
-5
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>"{
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs* (-
-implicit return:75
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>B'%
-#OrderMicroservice.Data.AppDbContextX
++OrderMicroservice.Models.OrderRow.Price.setb
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs$ ('"0*Ç
+0( ((¼
+¹
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs$ ('7#
+!OrderMicroservice.Models.OrderRow"
+Pricedecimal"__id*
+
+valuedecimal"y
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs$ ('
+implicit return:
+valuedecimalB%#
+!OrderMicroservice.Models.OrderRowX

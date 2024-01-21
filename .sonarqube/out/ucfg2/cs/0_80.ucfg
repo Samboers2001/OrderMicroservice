@@ -1,16 +1,27 @@
 
-,OrderMicroservice.Models.Order.OrderRows.set_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs7 (:"0*†
-0; (;þ
-û
-_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs7 (:Z 
-OrderMicroservice.Models.Order"6
-	OrderRows)System.Collections.Generic.ICollection<T>"__id*64
-2
-value)System.Collections.Generic.ICollection<T>"v
-_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs7 (:
-implicit return:42
-value)System.Collections.Generic.ICollection<T>B" 
-OrderMicroservice.Models.OrderX
+lOrderMircroservice.Controllers.OrderController.OrderController(OrderMicroservice.Data.Interfaces.IOrderRepo)n
+d/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/OrderController.cs ("0*
+0 (*
+1*è
+1 (%Œ
+‰
+ (	
+
+%0void"8Microsoft.AspNetCore.Mvc.ControllerBase.ControllerBase()*7
+ (	+)
+'Microsoft.AspNetCore.Mvc.ControllerBaseÄ
+Á
+ ($o0
+.OrderMircroservice.Controllers.OrderController";
+_repository,OrderMicroservice.Data.Interfaces.IOrderRepo"__id*><
+:
+
+repository,OrderMicroservice.Data.Interfaces.IOrderRepo*
+2*.
+2	 (	"
+ (	
+implicit return:F
+ (4:
+
+repository,OrderMicroservice.Data.Interfaces.IOrderRepoB20
+.OrderMircroservice.Controllers.OrderControllerX

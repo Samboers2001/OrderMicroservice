@@ -1,17 +1,17 @@
 
-LOrderMicroservice.MessageBusEvents.ProductCreatedEvent.ExternalProductId.getw
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*"0*þ
-0+ (+ã
-à
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*
-%retint"__id*Ñ
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*V*T8
-6OrderMicroservice.MessageBusEvents.ProductCreatedEvent"
-ExternalProductIdint"ˆ
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*
-
-%retintB:8
-6OrderMicroservice.MessageBusEvents.ProductCreatedEventX
++OrderMircroservice.WeatherForecast.Date.getb
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs ("0*Á
+0 (°
+­
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs (
+%retSystem.DateOnly"__id*§
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs (A*?$
+"OrderMircroservice.WeatherForecast"
+DateSystem.DateOnly"
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs (
+
+%retSystem.DateOnlyB&$
+"OrderMircroservice.WeatherForecast

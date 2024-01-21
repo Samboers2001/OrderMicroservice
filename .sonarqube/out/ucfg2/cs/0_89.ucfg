@@ -1,11 +1,16 @@
 
-rOrderMicroservice.Migrations.make_orderRows_nullable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)„
-z/Users/samboers/development/order_management_system/OrderMicroservice/Migrations/20231127092227_make_orderRows_nullable.cs  (""0*
-0 (*
-1*.
-1	 (	"
- (	
-implicit return:Y
-# (DM
-migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB86
-4OrderMicroservice.Migrations.make_orderRows_nullableX
+AOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserId.setw
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs$ ('"0*†
+0( ((å
+â
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs$ ('L8
+6OrderMicroservice.MessageBusEvents.UserRegisteredEvent"
+UserIdstring"__id*
+
+valuestring"Ž
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs$ ('
+implicit return:
+valuestringB:8
+6OrderMicroservice.MessageBusEvents.UserRegisteredEventX

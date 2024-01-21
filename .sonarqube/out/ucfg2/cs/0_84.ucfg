@@ -1,25 +1,17 @@
 
-ƒOrderMicroservice.Controllers.MessageController.MessageController(OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient)p
-f/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/MessageController.cs ( "0*
-0 (*
-1*ž
-1 (1Œ
-‰
- (	
-
-%0void"8Microsoft.AspNetCore.Mvc.ControllerBase.ControllerBase()*7
- (	+)
-'Microsoft.AspNetCore.Mvc.ControllerBaseú
-÷
- (0Š1
-/OrderMicroservice.Controllers.MessageController"U
-_messageBusClient@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient"__id*XV
-T
-messageBusClient@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient*
-2*.
-2	 (	"
- (	
-implicit return:`
-! (CT
-messageBusClient@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClientB31
-/OrderMicroservice.Controllers.MessageControllerX
+6OrderMicroservice.Dtos.MessagePublishedDto.Message.getk
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs  (#"0*Ì
+0$ ($»
+¸
+k
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs  (#
+%retstring"__id*²
+k
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs  (#C*A,
+*OrderMicroservice.Dtos.MessagePublishedDto"
+Messagestring"
+k
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs  (#
+
+%retstringB.,
+*OrderMicroservice.Dtos.MessagePublishedDto

@@ -1,13 +1,12 @@
-¤
-COrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.Microsoft.Extensions.Hosting.BackgroundServiceobjectÖ
-†MessageBusSubscriber(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)ÊOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.MessageBusSubscriber(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)p
-InitializeRabbitMQ()XOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.InitializeRabbitMQ()¨
-0ExecuteAsync(System.Threading.CancellationToken)tOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.ExecuteAsync(System.Threading.CancellationToken)Ê
-€ProcessUserRegisteredEvent(OrderMicroservice.MessageBusEvents.UserRegisteredEvent, OrderMicroservice.Data.Interfaces.IOrderRepo)ÄOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.ProcessUserRegisteredEvent(OrderMicroservice.MessageBusEvents.UserRegisteredEvent, OrderMicroservice.Data.Interfaces.IOrderRepo)Ã
-}ProcessProductCreated(OrderMicroservice.MessageBusEvents.ProductCreatedEvent, OrderMicroservice.Data.Interfaces.IProductRepo)ÁOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.ProcessProductCreated(OrderMicroservice.MessageBusEvents.ProductCreatedEvent, OrderMicroservice.Data.Interfaces.IProductRepo)|
-SendAcknowledgment(string)^OrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.SendAcknowledgment(string)Õ
-FRabbitMQ_ConnectionShutdown(object, RabbitMQ.Client.ShutdownEventArgs)ŠOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.RabbitMQ_ConnectionShutdown(object, RabbitMQ.Client.ShutdownEventArgs)n
-OrderRepository.getWOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.OrderRepository.getn
-OrderRepository.setWOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.OrderRepository.setr
-ProductRepository.getYOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.ProductRepository.getr
-ProductRepository.setYOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.ProductRepository.set
+í
+#OrderMicroservice.Data.AppDbContext'Microsoft.EntityFrameworkCore.DbContextobjectë
+aAppDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<OrderMicroservice.Data.AppDbContext>)…OrderMicroservice.Data.AppDbContext.AppDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<OrderMicroservice.Data.AppDbContext>)ž
+;OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)_OrderMicroservice.Data.AppDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)<
+
+Orders.get.OrderMicroservice.Data.AppDbContext.Orders.get<
+
+Orders.set.OrderMicroservice.Data.AppDbContext.Orders.setB
+OrderRows.get1OrderMicroservice.Data.AppDbContext.OrderRows.getB
+OrderRows.set1OrderMicroservice.Data.AppDbContext.OrderRows.set@
+Products.get0OrderMicroservice.Data.AppDbContext.Products.get@
+Products.set0OrderMicroservice.Data.AppDbContext.Products.set

@@ -1,4 +1,0 @@
-ë
-/OrderMicroservice.Controllers.MessageController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectÛ
-SMessageController(OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient)ƒOrderMicroservice.Controllers.MessageController.MessageController(OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient)¨
-:PublishMessage(OrderMicroservice.Dtos.MessagePublishedDto)jOrderMicroservice.Controllers.MessageController.PublishMessage(OrderMicroservice.Dtos.MessagePublishedDto)

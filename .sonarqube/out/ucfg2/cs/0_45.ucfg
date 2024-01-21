@@ -1,16 +1,16 @@
 
-AOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserId.setw
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs$ ('"0*†
-0( ((å
-â
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs$ ('L8
-6OrderMicroservice.MessageBusEvents.UserRegisteredEvent"
-UserIdstring"__id*
-
-valuestring"Ž
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs$ ('
-implicit return:
-valuestringB:8
-6OrderMicroservice.MessageBusEvents.UserRegisteredEventX
+3OrderMircroservice.WeatherForecast.TemperatureC.setb
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs# (&"0*Ç
+0' ('¼
+¹
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs# (&;$
+"OrderMircroservice.WeatherForecast"
+TemperatureCint"__id*
+
+valueint"y
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs# (&
+implicit return:
+valueintB&$
+"OrderMircroservice.WeatherForecastX

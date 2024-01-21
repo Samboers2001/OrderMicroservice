@@ -1,10 +1,10 @@
 
-NOrderMicroservice.Migrations.make_orderRows_nullable.make_orderRows_nullable()„
-z/Users/samboers/development/order_management_system/OrderMicroservice/Migrations/20231127092227_make_orderRows_nullable.cs (0"0*¨
-0‹
-ˆ
+`OrderMicroservice.Migrations.changed_customerId_int_to_string.changed_customerId_int_to_string()Ž
+ƒ/Users/samboers/development/order_management_system/OrderMicroservice/Migrations/20231127091023_changed_customerId_int_to_string.cs (9"0*±
+0”
+‘
 
-%0void">Microsoft.EntityFrameworkCore.Migrations.Migration.Migration()*:86
-4OrderMicroservice.Migrations.make_orderRows_nullable"
-implicit returnB86
-4OrderMicroservice.Migrations.make_orderRows_nullableX
+%0void">Microsoft.EntityFrameworkCore.Migrations.Migration.Migration()*CA?
+=OrderMicroservice.Migrations.changed_customerId_int_to_string"
+implicit returnBA?
+=OrderMicroservice.Migrations.changed_customerId_int_to_stringX

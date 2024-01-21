@@ -1,2 +1,2 @@
-.
-,OrderMicroservice.Data.Interfaces.IOrderRepo
+B
+@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient

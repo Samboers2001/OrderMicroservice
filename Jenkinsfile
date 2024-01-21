@@ -56,27 +56,14 @@ pipeline {
                 }
             }
         }
-
-        stage('Install Trivy') {
-            steps {
-                sh 'curl -LO https://github.com/aquasecurity/trivy/releases/download/v0.48.3/trivy_0.48.3_Linux-64bit.deb'
-                sh 'sudo dpkg -i trivy_0.48.3_Linux-64bit.deb'
-            }
-        }
    
 
-        stage('Docker Image Scan') {
+        stage('Run Trivy Scan') {
             steps {
-                script {
-                    // Define the Docker image name and tag
-                    def dockerImage = 'samboers/ordermicroservice:latest'
-
-                    // Run Trivy to scan the Docker image for vulnerabilities
-                    sh "docker pull $dockerImage" // Pull the image
-                    sh "trivy image --exit-code 1 --no-progress $dockerImage" // Corrected Trivy command
-                }
+                sh 'trivy image --exit-code 1 --no-progress samboers/ordermicroservice:latest'
             }
         }
+
 
         
         stage('Push to dockerhub') {

@@ -1,6 +1,7 @@
-½
-*OrderMicroservice.Migrations.InitialCreate2Microsoft.EntityFrameworkCore.Migrations.Migrationobject©
-=Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)hOrderMicroservice.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)­
-?Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)jOrderMicroservice.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)§
-<BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)gOrderMicroservice.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)M
-InitialCreate():OrderMicroservice.Migrations.InitialCreate.InitialCreate()
+ÿ
+ OrderMicroservice.Models.Productobject7
+	Product()*OrderMicroservice.Models.Product.Product()O
+ExternalProductId.get6OrderMicroservice.Models.Product.ExternalProductId.getO
+ExternalProductId.set6OrderMicroservice.Models.Product.ExternalProductId.set;
+Created.get,OrderMicroservice.Models.Product.Created.get;
+Created.set,OrderMicroservice.Models.Product.Created.set

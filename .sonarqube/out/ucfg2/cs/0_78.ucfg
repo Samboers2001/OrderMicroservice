@@ -1,16 +1,25 @@
 
-*OrderMicroservice.Models.Order.Created.set_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs' (*"0*Ð
-0+ (+È
-Å
-_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs' (*> 
-OrderMicroservice.Models.Order"
-CreatedSystem.DateTime"__id*
-
-valueSystem.DateTime"v
-_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs' (*
-implicit return:
-valueSystem.DateTimeB" 
-OrderMicroservice.Models.OrderX
+ƒOrderMicroservice.Controllers.MessageController.MessageController(OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient)p
+f/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/MessageController.cs ( "0*
+0 (*
+1*ž
+1 (1Œ
+‰
+ (	
+
+%0void"8Microsoft.AspNetCore.Mvc.ControllerBase.ControllerBase()*7
+ (	+)
+'Microsoft.AspNetCore.Mvc.ControllerBaseú
+÷
+ (0Š1
+/OrderMicroservice.Controllers.MessageController"U
+_messageBusClient@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient"__id*XV
+T
+messageBusClient@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient*
+2*.
+2	 (	"
+ (	
+implicit return:`
+! (CT
+messageBusClient@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClientB31
+/OrderMicroservice.Controllers.MessageControllerX

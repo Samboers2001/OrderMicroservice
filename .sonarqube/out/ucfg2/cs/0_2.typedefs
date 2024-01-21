@@ -1,5 +1,5 @@
-ù
-*OrderMicroservice.Dtos.MessagePublishedDtoobjectY
-MessagePublishedDto()@OrderMicroservice.Dtos.MessagePublishedDto.MessagePublishedDto()E
-Message.get6OrderMicroservice.Dtos.MessagePublishedDto.Message.getE
-Message.set6OrderMicroservice.Dtos.MessagePublishedDto.Message.set
+ı
+6OrderMicroservice.MessageBusEvents.ProductCreatedEventobjecte
+ProductCreatedEvent()LOrderMicroservice.MessageBusEvents.ProductCreatedEvent.ProductCreatedEvent()e
+ExternalProductId.getLOrderMicroservice.MessageBusEvents.ProductCreatedEvent.ExternalProductId.gete
+ExternalProductId.setLOrderMicroservice.MessageBusEvents.ProductCreatedEvent.ExternalProductId.set
