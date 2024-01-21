@@ -1,43 +1,16 @@
 
-ÃOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler.AcknowledgmentHandler(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)Ü
-z/Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs— —($"0*
-0
-— —(*
-1*ë
-1
-— ‘()Ñ
-Å
-
-— ’(	
-
-%0void"object.Object()*V
-
-— ’(	HF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandlerÌ
-Í
-
-” ”(*çF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler"C
-_configuration1Microsoft.Extensions.Configuration.IConfiguration"__id*FD
-B
-configuration1Microsoft.Extensions.Configuration.IConfigurationÉ
-Ä
-
-‘ ‘((òF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler"N
-_scopeFactory=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory"__id*QO
-M
-scopeFactory=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory*
-2*2
-2
-’	 ’(	"!
-
-’ ’(	
-implicit return:P
-
-—% —(AB
-configuration1Microsoft.Extensions.Configuration.IConfiguration:[
-
-—C —(dM
-scopeFactory=Microsoft.Extensions.DependencyInjection.IServiceScopeFactoryBHF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandlerX
+.OrderMircroservice.WeatherForecast.Summary.setb
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs" (%"0*»
+0& (&Ω
+∫
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs" (%9$
+"OrderMircroservice.WeatherForecast"
+Summarystring"__id*
+
+valuestring"y
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs" (%
+implicit return:
+valuestringB&$
+"OrderMircroservice.WeatherForecastX

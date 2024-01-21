@@ -1,17 +1,16 @@
 
-3OrderMircroservice.WeatherForecast.TemperatureC.getb
-X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs (!"0*¥
-0" (" 
-
-b
-X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs (!
-%retint"__id*£
-b
-X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs (!=*;$
-"OrderMircroservice.WeatherForecast"
-TemperatureCint"s
-b
-X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs (!
-
-%retintB&$
-"OrderMircroservice.WeatherForecastX
+6OrderMicroservice.Models.Product.ExternalProductId.seta
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs, (/"0*È
+00 (0¾
+»
+a
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs, (/>"
+ OrderMicroservice.Models.Product"
+ExternalProductIdint"__id*
+
+valueint"x
+a
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs, (/
+implicit return:
+valueintB$"
+ OrderMicroservice.Models.ProductX

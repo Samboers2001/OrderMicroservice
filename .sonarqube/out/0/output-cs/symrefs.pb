@@ -104,17 +104,17 @@ m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBu
 
  $
 
- {
-a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs
-
- $
-
- ‡
+ ‡
 m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs
 
  $
 
- $Â
+ ${
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs
+
+ $
+
+ Â
 f/Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/ProductRepo.cs
 
  <
@@ -128,15 +128,25 @@ f/Users/samboers/development/order_management_system/OrderMicroservice/Data/Repo
 * 3P Y
 4 59 :
 
-    0þ
-n/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/WeatherForecastController.cs
- & 6- F
-		% . 3 <
-8 ? 
-H N 
+    0Â
+d/Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/OrderRepo.cs
 
-( +
-- 2> C¯
+ F
+& .     "" 
+
+
+& - 
+
+ 
+& +  %
+
+" .
+
+ )
+1 7G M
+2 37 8
+
+  0¯
 e/Users/samboers/development/order_management_system/OrderMicroservice/Data/Interfaces/IProductRepo.cs
 
  !
@@ -186,35 +196,15 @@ Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppD
   
   !
    
-   Â
-d/Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/OrderRepo.cs
+   þ
+n/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/WeatherForecastController.cs
+ & 6- F
+		% . 3 <
+8 ? 
+H N 
 
- F
-& .     "" 
-
-
-& - 
-
- 
-& +  %
-
-" .
-
- )
-1 7G M
-2 37 8
-
-  0Ê
-d/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/OrderController.cs
-
-
-
-  
-$ /  $
-* 4 $
-
-0 <
-  Ì
+( +
+- 2> CÌ
 f/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/MessageController.cs
 
  "
@@ -362,7 +352,17 @@ w/Users/samboers/development/order_management_system/OrderMicroservice/AsyncData
 
  
 
-3 F™
+3 FÊ
+d/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/OrderController.cs
+
+
+
+  
+$ /  $
+* 4 $
+
+0 <
+  ™
 {/Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs
 
 		 !(

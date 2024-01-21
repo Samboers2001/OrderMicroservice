@@ -1,17 +1,17 @@
 
-6OrderMicroservice.Models.Product.ExternalProductId.geta
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs' (*"0*¥
-0+ (+¡
-ž
-a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs' (*
-%retint"__id*¥
-a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs' (*@*>"
- OrderMicroservice.Models.Product"
-ExternalProductIdint"r
-a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs' (*
+LOrderMicroservice.MessageBusEvents.ProductCreatedEvent.ExternalProductId.getw
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*"0*þ
+0+ (+ã
+à
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*
+%retint"__id*Ñ
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*V*T8
+6OrderMicroservice.MessageBusEvents.ProductCreatedEvent"
+ExternalProductIdint"ˆ
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*
 
-%retintB$"
- OrderMicroservice.Models.ProductX
+%retintB:8
+6OrderMicroservice.MessageBusEvents.ProductCreatedEventX

@@ -1,6 +1,6 @@
-Ë
-/OrderMicroservice.Data.Repositories.ProductRepoobject.OrderMicroservice.Data.Interfaces.IProductRepo”
-0ProductRepo(OrderMicroservice.Data.AppDbContext)`OrderMicroservice.Data.Repositories.ProductRepo.ProductRepo(OrderMicroservice.Data.AppDbContext)’
-/CreateProduct(OrderMicroservice.Models.Product)_OrderMicroservice.Data.Repositories.ProductRepo.CreateProduct(OrderMicroservice.Models.Product)Z
-GetProductById(int)COrderMicroservice.Data.Repositories.ProductRepo.GetProductById(int)X
-SaveChangesAsync()BOrderMicroservice.Data.Repositories.ProductRepo.SaveChangesAsync()
+Ã
+=OrderMicroservice.Migrations.changed_customerId_int_to_string2Microsoft.EntityFrameworkCore.Migrations.Migrationobject¼
+=Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder){OrderMicroservice.Migrations.changed_customerId_int_to_string.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)À
+?Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)}OrderMicroservice.Migrations.changed_customerId_int_to_string.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)º
+<BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)zOrderMicroservice.Migrations.changed_customerId_int_to_string.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)†
+"changed_customerId_int_to_string()`OrderMicroservice.Migrations.changed_customerId_int_to_string.changed_customerId_int_to_string()

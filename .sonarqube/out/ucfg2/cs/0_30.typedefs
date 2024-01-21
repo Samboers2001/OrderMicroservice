@@ -1,6 +1,7 @@
-Ã
-=OrderMicroservice.Migrations.changed_customerId_int_to_string2Microsoft.EntityFrameworkCore.Migrations.Migrationobject¼
-=Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder){OrderMicroservice.Migrations.changed_customerId_int_to_string.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)À
-?Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)}OrderMicroservice.Migrations.changed_customerId_int_to_string.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)º
-<BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)zOrderMicroservice.Migrations.changed_customerId_int_to_string.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)†
-"changed_customerId_int_to_string()`OrderMicroservice.Migrations.changed_customerId_int_to_string.changed_customerId_int_to_string()
+ÿ
+ OrderMicroservice.Models.Productobject7
+	Product()*OrderMicroservice.Models.Product.Product()O
+ExternalProductId.get6OrderMicroservice.Models.Product.ExternalProductId.getO
+ExternalProductId.set6OrderMicroservice.Models.Product.ExternalProductId.set;
+Created.get,OrderMicroservice.Models.Product.Created.get;
+Created.set,OrderMicroservice.Models.Product.Created.set

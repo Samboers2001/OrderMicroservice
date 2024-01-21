@@ -1,27 +1,16 @@
 
-0OrderMicroservice.Data.AppDbContext.Products.getd
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
-) 
-(,"0*Ö
-0
-- 
-(-Œ
-‰
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
-) 
-(,M
-%retEMicrosoft.EntityFrameworkCore.DbSet<OrderMicroservice.Models.Product>"__id*Ë
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
-) 
-(,c*a%
-#OrderMicroservice.Data.AppDbContext"8
-Products,Microsoft.EntityFrameworkCore.DbSet<TEntity>"·
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
-) 
-(,O
-M
-%retEMicrosoft.EntityFrameworkCore.DbSet<OrderMicroservice.Models.Product>B'%
-#OrderMicroservice.Data.AppDbContext
+3OrderMircroservice.WeatherForecast.TemperatureC.setb
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs# (&"0*Ç
+0' ('¼
+¹
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs# (&;$
+"OrderMircroservice.WeatherForecast"
+TemperatureCint"__id*
+
+valueint"y
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs# (&
+implicit return:
+valueintB&$
+"OrderMircroservice.WeatherForecastX

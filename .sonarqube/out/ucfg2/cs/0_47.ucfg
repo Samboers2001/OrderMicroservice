@@ -1,16 +1,17 @@
 
-,OrderMicroservice.Models.Product.Created.seta
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	' 	(*"0*Ö
-0	+ 	(+Ì
-É
-a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	' 	(*@"
- OrderMicroservice.Models.Product"
-CreatedSystem.DateTime"__id*
-
-valueSystem.DateTime"x
-a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	' 	(*
-implicit return:
-valueSystem.DateTimeB$"
- OrderMicroservice.Models.ProductX
++OrderMircroservice.WeatherForecast.Date.getb
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs ("0*Á
+0 (°
+­
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs (
+%retSystem.DateOnly"__id*§
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs (A*?$
+"OrderMircroservice.WeatherForecast"
+DateSystem.DateOnly"
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs (
+
+%retSystem.DateOnlyB&$
+"OrderMircroservice.WeatherForecast

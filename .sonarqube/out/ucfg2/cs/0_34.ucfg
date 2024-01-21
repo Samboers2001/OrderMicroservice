@@ -1,10 +1,10 @@
 
-*OrderMicroservice.Models.Product.Product()a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs ("0*c
-0G
-E
+NOrderMicroservice.Migrations.make_orderRows_nullable.make_orderRows_nullable()„
+z/Users/samboers/development/order_management_system/OrderMicroservice/Migrations/20231127092227_make_orderRows_nullable.cs (0"0*¨
+0‹
+ˆ
 
-%0void"object.Object()*&$"
- OrderMicroservice.Models.Product"
-implicit returnB$"
- OrderMicroservice.Models.ProductX
+%0void">Microsoft.EntityFrameworkCore.Migrations.Migration.Migration()*:86
+4OrderMicroservice.Migrations.make_orderRows_nullable"
+implicit returnB86
+4OrderMicroservice.Migrations.make_orderRows_nullableX
