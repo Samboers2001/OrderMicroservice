@@ -2,7 +2,8 @@ pipeline {
     agent any 
     
     environment {
-        PATH = "/usr/local/bin:/Users/samboers/google-cloud-sdk/bin:$PATH"
+                PATH = "/usr/local/share/dotnet:/usr/local/bin:/Users/samboers/google-cloud-sdk/bin:$PATH"
+
     }
 
     stages {
