@@ -22,13 +22,14 @@ pipeline {
             steps {
                 script {
                     withCredentials([string(credentialsId: 'sonarcloud-token', variable: 'SONAR_TOKEN')]) {
-                        sh 'dotnet sonarscanner begin /k:"Samboers2001_OrderMicroservice" /d:sonar.login="$SONAR_TOKEN"'
+                        sh 'dotnet sonarscanner begin /k:"Samboers2001_OrderMicroservice" /o:"Sam Boers" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login="$SONAR_TOKEN"'
                         sh 'dotnet build'
                         sh 'dotnet sonarscanner end /d:sonar.login="$SONAR_TOKEN"'
                     }
                 }
             }
         }
+
 
 
         stage('Restore and Test') {
