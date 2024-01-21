@@ -1,0 +1,17 @@
+
+0OrderMicroservice.Models.OrderRow.OrderRowId.setb
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs	% 	(("0*Ä
+0	) 	()¹
+¶
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs	% 	((8#
+!OrderMicroservice.Models.OrderRow"
+
+OrderRowIdint"__id*
+
+valueint"y
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs	% 	((
+implicit return:
+valueintB%#
+!OrderMicroservice.Models.OrderRowX

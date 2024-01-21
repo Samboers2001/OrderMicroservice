@@ -56,6 +56,19 @@ pipeline {
                 }
             }
         }
+
+        stage('Docker Image Scan') {
+            steps {
+                script {
+                    // Define the Docker image name and tag
+                    def dockerImage = 'samboers/ordermicroservice:latest'
+
+                    // Run Trivy to scan the Docker image for vulnerabilities
+                    sh "docker pull $dockerImage" // Pull the image
+                    sh "docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy $dockerImage"
+                }
+            }
+}
         
         stage('Push to dockerhub') {
             steps {

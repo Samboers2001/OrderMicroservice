@@ -1,0 +1,11 @@
+
+tOrderMicroservice.Migrations.make_orderRows_nullable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)„
+z/Users/samboers/development/order_management_system/OrderMicroservice/Migrations/20231127092227_make_orderRows_nullable.cs  ($"0*
+0 (*
+1*.
+1	 (	"
+ (	
+implicit return:Y
+% (FM
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB86
+4OrderMicroservice.Migrations.make_orderRows_nullableX

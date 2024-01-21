@@ -1,0 +1,38 @@
+
+=OrderMircroservice.Controllers.OrderController.GetAllOrders()n
+d/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/OrderController.cs0 (<"0*4
+0 ( 
+
+0 (<
+%0"__entrypoint*
+1*ë
+1 (Š‡
+ (3/
+%1)System.Collections.Generic.IEnumerable<T>";OrderMicroservice.Data.Interfaces.IOrderRepo.GetAllOrders()*}
+ ($q*o0
+.OrderMircroservice.Controllers.OrderController";
+_repository,OrderMicroservice.Data.Interfaces.IOrderRepo2GetAllOrders()|
+z
+ (33
+orders)System.Collections.Generic.IEnumerable<T>"__id*31
+/
+%1)System.Collections.Generic.IEnumerable<T>þ
+ (-
+%2'Microsoft.AspNetCore.Mvc.OkObjectResult"3Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object?)*>
+ (20
+.OrderMircroservice.Controllers.OrderController*A
+ (5
+3
+orders)System.Collections.Generic.IEnumerable<T>2Ok(object?)Ç
+Ä
+ (u
+%retmMicrosoft.AspNetCore.Mvc.ActionResult<System.Collections.Generic.IEnumerable<OrderMicroservice.Models.Order>>"__id*;
+ (/
+-
+%2'Microsoft.AspNetCore.Mvc.OkObjectResult*
+2*“
+2	 (	"ƒ
+ (	w
+u
+%retmMicrosoft.AspNetCore.Mvc.ActionResult<System.Collections.Generic.IEnumerable<OrderMicroservice.Models.Order>>B20
+.OrderMircroservice.Controllers.OrderController

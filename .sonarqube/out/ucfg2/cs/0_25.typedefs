@@ -1,0 +1,6 @@
+Ã
+=OrderMicroservice.Migrations.changed_customerId_int_to_string2Microsoft.EntityFrameworkCore.Migrations.Migrationobject¼
+=Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder){OrderMicroservice.Migrations.changed_customerId_int_to_string.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)À
+?Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)}OrderMicroservice.Migrations.changed_customerId_int_to_string.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)º
+<BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)zOrderMicroservice.Migrations.changed_customerId_int_to_string.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)†
+"changed_customerId_int_to_string()`OrderMicroservice.Migrations.changed_customerId_int_to_string.changed_customerId_int_to_string()
