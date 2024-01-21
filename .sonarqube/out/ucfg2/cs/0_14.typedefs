@@ -1,5 +1,13 @@
-ù
-*OrderMicroservice.Dtos.MessagePublishedDtoobjectY
-MessagePublishedDto()@OrderMicroservice.Dtos.MessagePublishedDto.MessagePublishedDto()E
-Message.get6OrderMicroservice.Dtos.MessagePublishedDto.Message.getE
-Message.set6OrderMicroservice.Dtos.MessagePublishedDto.Message.set
+§
+COrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.Microsoft.Extensions.Hosting.BackgroundServiceobject÷
+ÜMessageBusSubscriber(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory) OrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.MessageBusSubscriber(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)p
+InitializeRabbitMQ()XOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.InitializeRabbitMQ()®
+0ExecuteAsync(System.Threading.CancellationToken)tOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.ExecuteAsync(System.Threading.CancellationToken) 
+ÄProcessUserRegisteredEvent(OrderMicroservice.MessageBusEvents.UserRegisteredEvent, OrderMicroservice.Data.Interfaces.IOrderRepo)ƒOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.ProcessUserRegisteredEvent(OrderMicroservice.MessageBusEvents.UserRegisteredEvent, OrderMicroservice.Data.Interfaces.IOrderRepo)√
+}ProcessProductCreated(OrderMicroservice.MessageBusEvents.ProductCreatedEvent, OrderMicroservice.Data.Interfaces.IProductRepo)¡OrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.ProcessProductCreated(OrderMicroservice.MessageBusEvents.ProductCreatedEvent, OrderMicroservice.Data.Interfaces.IProductRepo)|
+SendAcknowledgment(string)^OrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.SendAcknowledgment(string)’
+FRabbitMQ_ConnectionShutdown(object, RabbitMQ.Client.ShutdownEventArgs)äOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.RabbitMQ_ConnectionShutdown(object, RabbitMQ.Client.ShutdownEventArgs)n
+OrderRepository.getWOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.OrderRepository.getn
+OrderRepository.setWOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.OrderRepository.setr
+ProductRepository.getYOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.ProductRepository.getr
+ProductRepository.setYOrderMicroservice.AsyncDataServices.Subscriber.MessageBusSubscriber.ProductRepository.set

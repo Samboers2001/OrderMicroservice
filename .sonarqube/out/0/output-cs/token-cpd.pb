@@ -2064,7 +2064,31 @@ repository $
 ; 
 } 	
 } 
-} Ó
+} ¤
+w/Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Interfaces/IMessageBusClient.cs
+	namespace 	
+OrderMicroservice
+ 
+. 
+AsyncDataServices -
+.- .
+
+Interfaces. 8
+{ 
+public 
+
+	interface 
+IMessageBusClient &
+{ 
+void 
+PublishNewMessage 
+( 
+MessagePublishedDto 2
+messagePublishedDto3 F
+)F G
+;G H
+} 
+} Ó
 f/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/MessageController.cs
 	namespace 	
 OrderMicroservice
@@ -3761,31 +3785,7 @@ routingKey
 îî 	
 }
 ïï 
-}ðð ¤
-w/Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Interfaces/IMessageBusClient.cs
-	namespace 	
-OrderMicroservice
- 
-. 
-AsyncDataServices -
-.- .
-
-Interfaces. 8
-{ 
-public 
-
-	interface 
-IMessageBusClient &
-{ 
-void 
-PublishNewMessage 
-( 
-MessagePublishedDto 2
-messagePublishedDto3 F
-)F G
-;G H
-} 
-} À+
+}ðð À+
 {/Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs
 	namespace 	
 OrderMicroservice

@@ -1,7 +1,5 @@
-—
-DOrderMicroservice.AsyncDataServices.Implementations.MessageBusClientobject@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient–
-CMessageBusClient(Microsoft.Extensions.Configuration.IConfiguration)àOrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.MessageBusClient(Microsoft.Extensions.Configuration.IConfiguration)ƒ
-=PublishNewMessage(OrderMicroservice.Dtos.MessagePublishedDto)ÇOrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.PublishNewMessage(OrderMicroservice.Dtos.MessagePublishedDto)o
-SendMessage(string)XOrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.SendMessage(string)[
-	Dispose()NOrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.Dispose()÷
-FRabbitMQ_ConnectionShutdown(object, RabbitMQ.Client.ShutdownEventArgs)ãOrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.RabbitMQ_ConnectionShutdown(object, RabbitMQ.Client.ShutdownEventArgs)
+ù
+*OrderMicroservice.Dtos.MessagePublishedDtoobjectY
+MessagePublishedDto()@OrderMicroservice.Dtos.MessagePublishedDto.MessagePublishedDto()E
+Message.get6OrderMicroservice.Dtos.MessagePublishedDto.Message.getE
+Message.set6OrderMicroservice.Dtos.MessagePublishedDto.Message.set

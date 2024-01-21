@@ -1,24 +1,16 @@
 
-0OrderMicroservice.Data.AppDbContext.Products.setd
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
-. 
-(1"0*ö
-0
-2 
-(2ç
-ä
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
-. 
-(1a%
-#OrderMicroservice.Data.AppDbContext"8
-Products,Microsoft.EntityFrameworkCore.DbSet<TEntity>"__id*97
-5
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>"{
-d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
-. 
-(1
-implicit return:75
-value,Microsoft.EntityFrameworkCore.DbSet<TEntity>B'%
-#OrderMicroservice.Data.AppDbContextX
+,OrderMicroservice.Models.Order.OrderRows.set_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs7 (:"0*Ü
+0; (;˛
+˚
+_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs7 (:Z 
+OrderMicroservice.Models.Order"6
+	OrderRows)System.Collections.Generic.ICollection<T>"__id*64
+2
+value)System.Collections.Generic.ICollection<T>"v
+_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs7 (:
+implicit return:42
+value)System.Collections.Generic.ICollection<T>B" 
+OrderMicroservice.Models.OrderX

@@ -14,6 +14,40 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
+          "message": "Non-nullable property 'Message' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
           "message": "Non-nullable property 'Order' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "locations": [
             {
@@ -82,16 +116,16 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable field '_connection' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
+          "message": "Non-nullable property 'UserId' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs",
                 "region": {
-                  "startLine": 209,
-                  "startColumn": 16,
-                  "endLine": 209,
-                  "endColumn": 37
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 29
                 }
               }
             }
@@ -99,46 +133,12 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs",
                 "region": {
-                  "startLine": 204,
-                  "startColumn": 29,
-                  "endLine": 204,
-                  "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable field '_channel' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
-                "region": {
-                  "startLine": 209,
-                  "startColumn": 16,
-                  "endLine": 209,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
-                "region": {
-                  "startLine": 205,
-                  "startColumn": 24,
-                  "endLine": 205,
-                  "endColumn": 32
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 29
                 }
               }
             }
@@ -261,16 +261,16 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'Message' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Non-nullable field '_connection' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs",
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
                 "region": {
-                  "startLine": 5,
-                  "startColumn": 23,
-                  "endLine": 5,
-                  "endColumn": 30
+                  "startLine": 209,
+                  "startColumn": 16,
+                  "endLine": 209,
+                  "endColumn": 37
                 }
               }
             }
@@ -278,12 +278,12 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs",
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
                 "region": {
-                  "startLine": 5,
-                  "startColumn": 23,
-                  "endLine": 5,
-                  "endColumn": 30
+                  "startLine": 204,
+                  "startColumn": 29,
+                  "endLine": 204,
+                  "endColumn": 40
                 }
               }
             }
@@ -295,16 +295,16 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'UserId' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Non-nullable field '_channel' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs",
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
                 "region": {
-                  "startLine": 5,
-                  "startColumn": 23,
-                  "endLine": 5,
-                  "endColumn": 29
+                  "startLine": 209,
+                  "startColumn": 16,
+                  "endLine": 209,
+                  "endColumn": 37
                 }
               }
             }
@@ -312,12 +312,75 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs",
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
                 "region": {
-                  "startLine": 5,
-                  "startColumn": 23,
-                  "endLine": 5,
-                  "endColumn": 29
+                  "startLine": 205,
+                  "startColumn": 24,
+                  "endLine": 205,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/OrderRepo.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 20,
+                  "endLine": 27,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/ProductRepo.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 20,
+                  "endLine": 29,
+                  "endColumn": 91
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Possible null reference argument for parameter 's' in 'int int.Parse(string s)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
+                "region": {
+                  "startLine": 220,
+                  "startColumn": 34,
+                  "endLine": 220,
+                  "endColumn": 64
                 }
               }
             }
@@ -672,69 +735,6 @@
         {
           "ruleId": "CS8604",
           "level": "warning",
-          "message": "Possible null reference argument for parameter 's' in 'int int.Parse(string s)'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
-                "region": {
-                  "startLine": 220,
-                  "startColumn": 34,
-                  "endLine": 220,
-                  "endColumn": 64
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Possible null reference return.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/OrderRepo.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 20,
-                  "endLine": 27,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Possible null reference return.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/ProductRepo.cs",
-                "region": {
-                  "startLine": 29,
-                  "startColumn": 20,
-                  "endLine": 29,
-                  "endColumn": 91
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8604",
-          "level": "warning",
           "message": "Possible null reference argument for parameter 'userRegisteredEvent' in 'Task MessageBusSubscriber.ProcessUserRegisteredEvent(UserRegisteredEvent userRegisteredEvent, IOrderRepo orderRepository)'.",
           "locations": [
             {
@@ -819,48 +819,6 @@
         {
           "ruleId": "S4487",
           "level": "warning",
-          "message": "Remove this unread private field '_logger' or refactor the code to use its value.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Controllers/WeatherForecastController.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 57,
-                  "endLine": 14,
-                  "endColumn": 64
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1450",
-          "level": "warning",
-          "message": "Remove the field '_configuration' and declare it as a local variable in the relevant methods.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 41,
-                  "endLine": 11,
-                  "endColumn": 55
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S4487",
-          "level": "warning",
           "message": "Remove this unread private field '_scopeFactory' or refactor the code to use its value.",
           "locations": [
             {
@@ -903,6 +861,27 @@
         {
           "ruleId": "S1450",
           "level": "warning",
+          "message": "Remove the field '_configuration' and declare it as a local variable in the relevant methods.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 41,
+                  "endLine": 11,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1450",
+          "level": "warning",
           "message": "Remove the field '_channel' and declare it as a local variable in the relevant methods.",
           "locations": [
             {
@@ -922,18 +901,18 @@
           }
         },
         {
-          "ruleId": "S1481",
+          "ruleId": "S4487",
           "level": "warning",
-          "message": "Remove the unused local variable 'redisConnectionString'.",
+          "message": "Remove this unread private field '_logger' or refactor the code to use its value.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Controllers/WeatherForecastController.cs",
                 "region": {
-                  "startLine": 34,
-                  "startColumn": 21,
-                  "endLine": 34,
-                  "endColumn": 42
+                  "startLine": 14,
+                  "startColumn": 57,
+                  "endLine": 14,
+                  "endColumn": 64
                 }
               }
             }
@@ -964,18 +943,18 @@
           }
         },
         {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "Member 'ProcessProductCreated' does not access instance data and can be marked as static",
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'redisConnectionString'.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
                 "region": {
-                  "startLine": 158,
-                  "startColumn": 28,
-                  "endLine": 158,
-                  "endColumn": 49
+                  "startLine": 34,
+                  "startColumn": 21,
+                  "endLine": 34,
+                  "endColumn": 42
                 }
               }
             }
@@ -997,6 +976,27 @@
                   "startColumn": 28,
                   "endLine": 132,
                   "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Member 'ProcessProductCreated' does not access instance data and can be marked as static",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
+                "region": {
+                  "startLine": 158,
+                  "startColumn": 28,
+                  "endLine": 158,
+                  "endColumn": 49
                 }
               }
             }

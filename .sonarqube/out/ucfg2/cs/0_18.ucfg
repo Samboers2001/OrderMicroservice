@@ -1,10 +1,10 @@
 
-LOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserRegisteredEvent()w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs ($"0*y
-0]
-[
+,OrderMicroservice.Models.OrderRow.OrderRow()b
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs ("0*d
+0H
+F
 
-%0void"object.Object()*<:8
-6OrderMicroservice.MessageBusEvents.UserRegisteredEvent"
-implicit returnB:8
-6OrderMicroservice.MessageBusEvents.UserRegisteredEventX
+%0void"object.Object()*'%#
+!OrderMicroservice.Models.OrderRow"
+implicit returnB%#
+!OrderMicroservice.Models.OrderRowX

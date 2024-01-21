@@ -1,4 +1,4 @@
-ƒ
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandlerobjectÙ
-‡AcknowledgmentHandler(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)ÌOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler.AcknowledgmentHandler(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)W
-Start()LOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler.Start()
+™
+6OrderMicroservice.Migrations.AppDbContextModelSnapshot:Microsoft.EntityFrameworkCore.Infrastructure.ModelSnapshotobject§
+6BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)mOrderMicroservice.Migrations.AppDbContextModelSnapshot.BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)q
+AppDbContextModelSnapshot()ROrderMicroservice.Migrations.AppDbContextModelSnapshot.AppDbContextModelSnapshot()

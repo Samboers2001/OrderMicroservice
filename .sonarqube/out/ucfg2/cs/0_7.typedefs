@@ -1,12 +1,7 @@
-í
-#OrderMicroservice.Data.AppDbContext'Microsoft.EntityFrameworkCore.DbContextobjectë
-aAppDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<OrderMicroservice.Data.AppDbContext>)…OrderMicroservice.Data.AppDbContext.AppDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<OrderMicroservice.Data.AppDbContext>)ž
-;OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)_OrderMicroservice.Data.AppDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)<
-
-Orders.get.OrderMicroservice.Data.AppDbContext.Orders.get<
-
-Orders.set.OrderMicroservice.Data.AppDbContext.Orders.setB
-OrderRows.get1OrderMicroservice.Data.AppDbContext.OrderRows.getB
-OrderRows.set1OrderMicroservice.Data.AppDbContext.OrderRows.set@
-Products.get0OrderMicroservice.Data.AppDbContext.Products.get@
-Products.set0OrderMicroservice.Data.AppDbContext.Products.set
+Ñ
+DOrderMicroservice.AsyncDataServices.Implementations.MessageBusClientobject@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClientÐ
+CMessageBusClient(Microsoft.Extensions.Configuration.IConfiguration)ˆOrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.MessageBusClient(Microsoft.Extensions.Configuration.IConfiguration)Ä
+=PublishNewMessage(OrderMicroservice.Dtos.MessagePublishedDto)‚OrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.PublishNewMessage(OrderMicroservice.Dtos.MessagePublishedDto)o
+SendMessage(string)XOrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.SendMessage(string)[
+	Dispose()NOrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.Dispose()Ö
+FRabbitMQ_ConnectionShutdown(object, RabbitMQ.Client.ShutdownEventArgs)‹OrderMicroservice.AsyncDataServices.Implementations.MessageBusClient.RabbitMQ_ConnectionShutdown(object, RabbitMQ.Client.ShutdownEventArgs)

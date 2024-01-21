@@ -1,18 +1,16 @@
 
-0OrderMicroservice.Models.OrderRow.OrderRowId.getb
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs	  	(#"0*¢
-0	$ 	($ù
-ö
-b
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs	  	(#
-%retint"__id*†
-b
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs	  	(#:*8#
-!OrderMicroservice.Models.OrderRow"
-
-OrderRowIdint"s
-b
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs	  	(#
-
-%retintB%#
-!OrderMicroservice.Models.OrderRowX
+6OrderMicroservice.Dtos.MessagePublishedDto.Message.setk
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs% (("0*„
+0) ()Œ
+À
+k
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs% ((A,
+*OrderMicroservice.Dtos.MessagePublishedDto"
+Messagestring"__id*
+
+valuestring"Ç
+k
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs% ((
+implicit return:
+valuestringB.,
+*OrderMicroservice.Dtos.MessagePublishedDtoX

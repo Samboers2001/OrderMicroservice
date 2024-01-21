@@ -32,9 +32,6 @@ pipeline {
             }
         }
 
-
-
-
         stage('Restore and Test') {
             steps {
                 script {
@@ -57,14 +54,11 @@ pipeline {
             }
         }
    
-
         stage('Run Trivy Scan') {
             steps {
-                sh 'trivy image --exit-code 1 --no-progress samboers/ordermicroservice:latest'
+                sh '/opt/homebrew/bin/trivy image --exit-code 1 --no-progress samboers/ordermicroservice:latest'
             }
         }
-
-
         
         stage('Push to dockerhub') {
             steps {

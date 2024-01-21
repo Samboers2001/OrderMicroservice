@@ -1,28 +1,16 @@
 
--OrderMicroservice.Models.Order.CustomerId.get_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs
-# 
-(&"0*ü
-0
-' 
-('ö
-ó
-_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs
-# 
-(&
-%retstring"__id*ù
-_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs
-# 
-(&:*8 
-OrderMicroservice.Models.Order"
-
-CustomerIdstring"s
-_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs
-# 
-(&
-
-%retstringB" 
-OrderMicroservice.Models.Order
++OrderMicroservice.Models.OrderRow.Order.setb
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%"0*ı
+0& (&Í
+Á
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%N#
+!OrderMicroservice.Models.OrderRow"'
+OrderOrderMicroservice.Models.Order"__id*+)
+'
+valueOrderMicroservice.Models.Order"y
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%
+implicit return:)'
+valueOrderMicroservice.Models.OrderB%#
+!OrderMicroservice.Models.OrderRowX

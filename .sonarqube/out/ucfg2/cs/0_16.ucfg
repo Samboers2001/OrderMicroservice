@@ -1,10 +1,10 @@
 
-@OrderMicroservice.Dtos.MessagePublishedDto.MessagePublishedDto()k
-a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs ($"0*m
-0Q
-O
+LOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserRegisteredEvent()w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs ($"0*y
+0]
+[
 
-%0void"object.Object()*0.,
-*OrderMicroservice.Dtos.MessagePublishedDto"
-implicit returnB.,
-*OrderMicroservice.Dtos.MessagePublishedDtoX
+%0void"object.Object()*<:8
+6OrderMicroservice.MessageBusEvents.UserRegisteredEvent"
+implicit returnB:8
+6OrderMicroservice.MessageBusEvents.UserRegisteredEventX

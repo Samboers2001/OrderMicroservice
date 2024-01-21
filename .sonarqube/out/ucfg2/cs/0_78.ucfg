@@ -1,25 +1,16 @@
 
-ƒOrderMicroservice.Controllers.MessageController.MessageController(OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient)p
-f/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/MessageController.cs ( "0*
-0 (*
-1*ž
-1 (1Œ
-‰
- (	
-
-%0void"8Microsoft.AspNetCore.Mvc.ControllerBase.ControllerBase()*7
- (	+)
-'Microsoft.AspNetCore.Mvc.ControllerBaseú
-÷
- (0Š1
-/OrderMicroservice.Controllers.MessageController"U
-_messageBusClient@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient"__id*XV
-T
-messageBusClient@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient*
-2*.
-2	 (	"
- (	
-implicit return:`
-! (CT
-messageBusClient@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClientB31
-/OrderMicroservice.Controllers.MessageControllerX
+.OrderMircroservice.WeatherForecast.Summary.setb
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs" (%"0*È
+0& (&½
+º
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs" (%9$
+"OrderMircroservice.WeatherForecast"
+Summarystring"__id*
+
+valuestring"y
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs" (%
+implicit return:
+valuestringB&$
+"OrderMircroservice.WeatherForecastX

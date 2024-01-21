@@ -1,16 +1,18 @@
 
-+OrderMicroservice.Models.OrderRow.Order.setb
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%"0*ı
-0& (&Í
-Á
+0OrderMicroservice.Models.OrderRow.OrderRowId.getb
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs	  	(#"0*¢
+0	$ 	($ù
+ö
 b
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%N#
-!OrderMicroservice.Models.OrderRow"'
-OrderOrderMicroservice.Models.Order"__id*+)
-'
-valueOrderMicroservice.Models.Order"y
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs	  	(#
+%retint"__id*†
 b
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%
-implicit return:)'
-valueOrderMicroservice.Models.OrderB%#
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs	  	(#:*8#
+!OrderMicroservice.Models.OrderRow"
+
+OrderRowIdint"s
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs	  	(#
+
+%retintB%#
 !OrderMicroservice.Models.OrderRowX
