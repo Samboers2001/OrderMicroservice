@@ -17,6 +17,18 @@ pipeline {
                 git 'https://github.com/Samboers2001/OrderMicroservice.Tests'
             }
         }
+        
+        stage('SonarCloud Scan') {
+            steps {
+                script {
+                withCredentials([string(credentialsId: 'sonarcloud-token', variable: 'SONAR_TOKEN')]) {
+                        sh '/usr/local/share/dotnet/dotnet sonarscanner begin /k:"Samboers2001_OrderMicroservice" /d:sonar.login="$SONAR_TOKEN"'
+                        sh '/usr/local/share/dotnet/dotnet build'
+                        sh '/usr/local/share/dotnet/dotnet sonarscanner end /d:sonar.login="$SONAR_TOKEN"'
+                    }
+                }
+            }
+        }
 
         stage('Restore and Test') {
             steps {
