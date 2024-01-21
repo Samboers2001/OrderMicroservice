@@ -1,16 +1,17 @@
 
-LOrderMicroservice.MessageBusEvents.ProductCreatedEvent.ExternalProductId.setw
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs, (/"0*‹
-00 (0ê
-ç
+AOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserId.getw
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs (""0*ü
+0# (#Þ
+Û
 w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs, (/T8
-6OrderMicroservice.MessageBusEvents.ProductCreatedEvent"
-ExternalProductIdint"__id*
-
-valueint"Ž
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs ("
+%retstring"__id*É
 w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs, (/
-implicit return:
-valueintB:8
-6OrderMicroservice.MessageBusEvents.ProductCreatedEventX
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs ("N*L8
+6OrderMicroservice.MessageBusEvents.UserRegisteredEvent"
+UserIdstring"‹
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs ("
+
+%retstringB:8
+6OrderMicroservice.MessageBusEvents.UserRegisteredEvent

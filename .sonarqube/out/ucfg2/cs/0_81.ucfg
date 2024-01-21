@@ -1,17 +1,16 @@
 
-LOrderMicroservice.MessageBusEvents.ProductCreatedEvent.ExternalProductId.getw
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*"0*þ
-0+ (+ã
-à
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*
-%retint"__id*Ñ
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*V*T8
-6OrderMicroservice.MessageBusEvents.ProductCreatedEvent"
-ExternalProductIdint"ˆ
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*
-
-%retintB:8
-6OrderMicroservice.MessageBusEvents.ProductCreatedEventX
+6OrderMicroservice.Dtos.MessagePublishedDto.Message.setk
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs% (("0*ã
+0) ()Î
+Ë
+k
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs% ((A,
+*OrderMicroservice.Dtos.MessagePublishedDto"
+Messagestring"__id*
+
+valuestring"‚
+k
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs% ((
+implicit return:
+valuestringB.,
+*OrderMicroservice.Dtos.MessagePublishedDtoX

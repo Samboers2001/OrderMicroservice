@@ -1,16 +1,16 @@
 
-+OrderMircroservice.WeatherForecast.Date.setb
-X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs  (#"0*×
-0$ ($Ì
+,OrderMicroservice.Models.Product.Created.seta
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	' 	(*"0*Ö
+0	+ 	(+Ì
 É
-b
-X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs  (#?$
-"OrderMircroservice.WeatherForecast"
-DateSystem.DateOnly"__id*
+a
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	' 	(*@"
+ OrderMicroservice.Models.Product"
+CreatedSystem.DateTime"__id*
 
-valueSystem.DateOnly"y
-b
-X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs  (#
+valueSystem.DateTime"x
+a
+W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs	' 	(*
 implicit return:
-valueSystem.DateOnlyB&$
-"OrderMircroservice.WeatherForecastX
+valueSystem.DateTimeB$"
+ OrderMicroservice.Models.ProductX

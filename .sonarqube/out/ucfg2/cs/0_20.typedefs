@@ -1,12 +1,7 @@
-í
-#OrderMicroservice.Data.AppDbContext'Microsoft.EntityFrameworkCore.DbContextobjectë
-aAppDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<OrderMicroservice.Data.AppDbContext>)…OrderMicroservice.Data.AppDbContext.AppDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<OrderMicroservice.Data.AppDbContext>)ž
-;OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)_OrderMicroservice.Data.AppDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)<
+É
+6OrderMicroservice.MessageBusEvents.UserRegisteredEventobjecte
+UserRegisteredEvent()LOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserRegisteredEvent()O
 
-Orders.get.OrderMicroservice.Data.AppDbContext.Orders.get<
+UserId.getAOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserId.getO
 
-Orders.set.OrderMicroservice.Data.AppDbContext.Orders.setB
-OrderRows.get1OrderMicroservice.Data.AppDbContext.OrderRows.getB
-OrderRows.set1OrderMicroservice.Data.AppDbContext.OrderRows.set@
-Products.get0OrderMicroservice.Data.AppDbContext.Products.get@
-Products.set0OrderMicroservice.Data.AppDbContext.Products.set
+UserId.setAOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserId.set

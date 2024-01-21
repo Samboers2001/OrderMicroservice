@@ -1,16 +1,16 @@
 
-6OrderMicroservice.Models.Product.ExternalProductId.seta
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs, (/"0*È
-00 (0¾
-»
-a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs, (/>"
- OrderMicroservice.Models.Product"
-ExternalProductIdint"__id*
-
-valueint"x
-a
-W/Users/samboers/development/order_management_system/OrderMicroservice/Models/Product.cs, (/
-implicit return:
-valueintB$"
- OrderMicroservice.Models.ProductX
+.OrderMicroservice.Data.AppDbContext.Orders.setd
+Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs* (-"0*˜
+0. (.‹
+ˆ
+d
+Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs* (-_%
+#OrderMicroservice.Data.AppDbContext"6
+Orders,Microsoft.EntityFrameworkCore.DbSet<TEntity>"__id*97
+5
+value,Microsoft.EntityFrameworkCore.DbSet<TEntity>"{
+d
+Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs* (-
+implicit return:75
+value,Microsoft.EntityFrameworkCore.DbSet<TEntity>B'%
+#OrderMicroservice.Data.AppDbContextX

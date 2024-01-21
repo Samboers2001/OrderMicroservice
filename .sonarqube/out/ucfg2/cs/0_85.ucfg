@@ -1,27 +1,16 @@
 
-lOrderMircroservice.Controllers.OrderController.OrderController(OrderMicroservice.Data.Interfaces.IOrderRepo)n
-d/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/OrderController.cs ("0*
-0 (*
-1*è
-1 (%Œ
-‰
- (	
-
-%0void"8Microsoft.AspNetCore.Mvc.ControllerBase.ControllerBase()*7
- (	+)
-'Microsoft.AspNetCore.Mvc.ControllerBaseÄ
-Á
- ($o0
-.OrderMircroservice.Controllers.OrderController";
-_repository,OrderMicroservice.Data.Interfaces.IOrderRepo"__id*><
-:
-
-repository,OrderMicroservice.Data.Interfaces.IOrderRepo*
-2*.
-2	 (	"
- (	
-implicit return:F
- (4:
-
-repository,OrderMicroservice.Data.Interfaces.IOrderRepoB20
-.OrderMircroservice.Controllers.OrderControllerX
+LOrderMicroservice.MessageBusEvents.ProductCreatedEvent.ExternalProductId.setw
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs, (/"0*‹
+00 (0ê
+ç
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs, (/T8
+6OrderMicroservice.MessageBusEvents.ProductCreatedEvent"
+ExternalProductIdint"__id*
+
+valueint"Ž
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs, (/
+implicit return:
+valueintB:8
+6OrderMicroservice.MessageBusEvents.ProductCreatedEventX

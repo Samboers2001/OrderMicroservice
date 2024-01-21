@@ -1,0 +1,6 @@
+Ë
+/OrderMicroservice.Data.Repositories.ProductRepoobject.OrderMicroservice.Data.Interfaces.IProductRepo”
+0ProductRepo(OrderMicroservice.Data.AppDbContext)`OrderMicroservice.Data.Repositories.ProductRepo.ProductRepo(OrderMicroservice.Data.AppDbContext)’
+/CreateProduct(OrderMicroservice.Models.Product)_OrderMicroservice.Data.Repositories.ProductRepo.CreateProduct(OrderMicroservice.Models.Product)Z
+GetProductById(int)COrderMicroservice.Data.Repositories.ProductRepo.GetProductById(int)X
+SaveChangesAsync()BOrderMicroservice.Data.Repositories.ProductRepo.SaveChangesAsync()

@@ -1,11 +1,4 @@
-Ç
-OrderMicroservice.Models.Orderobject1
-Order()&OrderMicroservice.Models.Order.Order()9
-OrderId.get*OrderMicroservice.Models.Order.OrderId.get9
-OrderId.set*OrderMicroservice.Models.Order.OrderId.set?
-CustomerId.get-OrderMicroservice.Models.Order.CustomerId.get?
-CustomerId.set-OrderMicroservice.Models.Order.CustomerId.set9
-Created.get*OrderMicroservice.Models.Order.Created.get9
-Created.set*OrderMicroservice.Models.Order.Created.set=
-OrderRows.get,OrderMicroservice.Models.Order.OrderRows.get=
-OrderRows.set,OrderMicroservice.Models.Order.OrderRows.set
+ƒ
+DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandlerobjectÙ
+‡AcknowledgmentHandler(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)ÌOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler.AcknowledgmentHandler(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)W
+Start()LOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler.Start()

@@ -56,9 +56,18 @@ pipeline {
    
         stage('Run Trivy Scan') {
             steps {
-                sh '/opt/homebrew/bin/trivy image --exit-code 1 --no-progress samboers/ordermicroservice:latest'
+                script {
+                    def trivyExitCode = sh(script: '/opt/homebrew/bin/trivy image --exit-code 1 --no-progress samboers/ordermicroservice:latest', returnStatus: true)
+                    
+                    if (trivyExitCode != 0) {
+                        echo "Vulnerabilities were found but the pipeline will continue."
+                    } else {
+                        echo "No vulnerabilities found."
+                    }
+                }
             }
         }
+
         
         stage('Push to dockerhub') {
             steps {

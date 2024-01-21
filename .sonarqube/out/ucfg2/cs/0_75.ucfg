@@ -1,17 +1,17 @@
 
-,OrderMicroservice.Models.Order.OrderRows.get_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5"0*Ê
-06 (6€
-ý
-_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5R
-%retJSystem.Collections.Generic.ICollection<OrderMicroservice.Models.OrderRow>?"__id*¿
-_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5\*Z 
-OrderMicroservice.Models.Order"6
-	OrderRows)System.Collections.Generic.ICollection<T>"·
-_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5T
-R
-%retJSystem.Collections.Generic.ICollection<OrderMicroservice.Models.OrderRow>?B" 
-OrderMicroservice.Models.Order
+6OrderMicroservice.Dtos.MessagePublishedDto.Message.getk
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs  (#"0*Ì
+0$ ($»
+¸
+k
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs  (#
+%retstring"__id*²
+k
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs  (#C*A,
+*OrderMicroservice.Dtos.MessagePublishedDto"
+Messagestring"
+k
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs  (#
+
+%retstringB.,
+*OrderMicroservice.Dtos.MessagePublishedDto

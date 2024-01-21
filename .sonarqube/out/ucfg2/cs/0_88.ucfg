@@ -1,43 +1,73 @@
 
-ÃOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler.AcknowledgmentHandler(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)Ü
-z/Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs— —($"0*
-0
-— —(*
-1*ë
-1
-— ‘()Ñ
-Å
+jOrderMicroservice.Controllers.MessageController.PublishMessage(OrderMicroservice.Dtos.MessagePublishedDto)p
+f/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/MessageController.cs (+"0*µ
+0 (z
+x
+ (+^
+8
 
-— ’(	
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto""
+<Message>k__BackingFieldstring"__entrypointi
+g
+ (+M
+8
 
-%0void"object.Object()*V
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto"
+Messagestring"__entrypoint©
+¶
+	 (
+%0"
+__annotate*JHF
+DMicrosoft.AspNetCore.Mvc.HttpPostAttribute.HttpPostAttribute(string)*<:
+8
 
-— ’(	HF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandlerÌ
-Í
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto£
+†
+- (5
+%1"
+__annotate*DB@
+>Microsoft.AspNetCore.Mvc.FromBodyAttribute.FromBodyAttribute()*<:
+8
 
-” ”(*çF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler"C
-_configuration1Microsoft.Extensions.Configuration.IConfiguration"__id*FD
-B
-configuration1Microsoft.Extensions.Configuration.IConfigurationÉ
-Ä
+messageDto*OrderMicroservice.Dtos.MessagePublishedDtoh
+f
+, (U8
 
-‘ ‘((òF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler"N
-_scopeFactory=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory"__id*QO
-M
-scopeFactory=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory*
-2*2
-2
-’	 ’(	"!
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto"__annotation*
+
+%0*
+
+%1*
+1*∆
+1 (8Ω∫
+ (;
 
-’ ’(	
-implicit return:P
+%2void"~OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient.PublishNewMessage(OrderMicroservice.Dtos.MessagePublishedDto)*ö
+ (ç*ä1
+/OrderMicroservice.Controllers.MessageController"U
+_messageBusClient@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient*F
+0 (::
+8
 
-—% —(AB
-configuration1Microsoft.Extensions.Configuration.IConfiguration:[
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto2=PublishNewMessage(OrderMicroservice.Dtos.MessagePublishedDto)Ì
+ (8-
+%3'Microsoft.AspNetCore.Mvc.OkObjectResult"3Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object?)*?
+ (31
+/OrderMicroservice.Controllers.MessageController*/
+ (7#!
+Message published successfully.2Ok(object?)
+}
+ (8.
+%ret&Microsoft.AspNetCore.Mvc.IActionResult"__id*;
+ (8/
+-
+%3'Microsoft.AspNetCore.Mvc.OkObjectResult*
+2*K
+2	 (	"<
+ (	0
+.
+%ret&Microsoft.AspNetCore.Mvc.IActionResult:D
+, (U8
 
-—C —(dM
-scopeFactory=Microsoft.Extensions.DependencyInjection.IServiceScopeFactoryBHF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandlerX
+messageDto*OrderMicroservice.Dtos.MessagePublishedDtoB31
+/OrderMicroservice.Controllers.MessageController
