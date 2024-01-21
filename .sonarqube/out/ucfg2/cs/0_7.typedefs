@@ -1,4 +1,4 @@
-ç
-8OrderMircroservice.Controllers.WeatherForecastController'Microsoft.AspNetCore.Mvc.ControllerBaseobject°
-yWeatherForecastController(Microsoft.Extensions.Logging.ILogger<OrderMircroservice.Controllers.WeatherForecastController>)²OrderMircroservice.Controllers.WeatherForecastController.WeatherForecastController(Microsoft.Extensions.Logging.ILogger<OrderMircroservice.Controllers.WeatherForecastController>)G
-Get()>OrderMircroservice.Controllers.WeatherForecastController.Get()
+â
+.OrderMircroservice.Controllers.OrderController'Microsoft.AspNetCore.Mvc.ControllerBaseobject­
+=OrderController(OrderMicroservice.Data.Interfaces.IOrderRepo)lOrderMircroservice.Controllers.OrderController.OrderController(OrderMicroservice.Data.Interfaces.IOrderRepo)O
+GetAllOrders()=OrderMircroservice.Controllers.OrderController.GetAllOrders()

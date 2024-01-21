@@ -65,10 +65,11 @@ pipeline {
 
                     // Run Trivy to scan the Docker image for vulnerabilities
                     sh "docker pull $dockerImage" // Pull the image
-                    sh "docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy $dockerImage"
+                    sh "trivy image --exit-code 1 --no-progress $dockerImage" // Corrected Trivy command
                 }
             }
-}
+        }
+
         
         stage('Push to dockerhub') {
             steps {

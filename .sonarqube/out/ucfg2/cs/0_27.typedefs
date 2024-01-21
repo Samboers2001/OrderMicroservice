@@ -1,18 +1,0 @@
-Ó
-!OrderMicroservice.Models.OrderRowobject:
-
-OrderRow(),OrderMicroservice.Models.OrderRow.OrderRow()B
-OrderRowId.get0OrderMicroservice.Models.OrderRow.OrderRowId.getB
-OrderRowId.set0OrderMicroservice.Models.OrderRow.OrderRowId.set<
-Created.get-OrderMicroservice.Models.OrderRow.Created.get<
-Created.set-OrderMicroservice.Models.OrderRow.Created.set<
-OrderId.get-OrderMicroservice.Models.OrderRow.OrderId.get<
-OrderId.set-OrderMicroservice.Models.OrderRow.OrderId.set@
-ProductId.get/OrderMicroservice.Models.OrderRow.ProductId.get@
-ProductId.set/OrderMicroservice.Models.OrderRow.ProductId.set>
-Quantity.get.OrderMicroservice.Models.OrderRow.Quantity.get>
-Quantity.set.OrderMicroservice.Models.OrderRow.Quantity.set8
-	Price.get+OrderMicroservice.Models.OrderRow.Price.get8
-	Price.set+OrderMicroservice.Models.OrderRow.Price.set8
-	Order.get+OrderMicroservice.Models.OrderRow.Order.get8
-	Order.set+OrderMicroservice.Models.OrderRow.Order.set

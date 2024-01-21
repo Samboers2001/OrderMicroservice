@@ -1,10 +1,10 @@
 
-4OrderMircroservice.WeatherForecast.WeatherForecast()b
-X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs ("0*e
-0I
-G
+@OrderMicroservice.Dtos.MessagePublishedDto.MessagePublishedDto()k
+a/Users/samboers/development/order_management_system/OrderMicroservice/Dtos/MessagePublishedDto.cs ($"0*m
+0Q
+O
 
-%0void"object.Object()*(&$
-"OrderMircroservice.WeatherForecast"
-implicit returnB&$
-"OrderMircroservice.WeatherForecastX
+%0void"object.Object()*0.,
+*OrderMicroservice.Dtos.MessagePublishedDto"
+implicit returnB.,
+*OrderMicroservice.Dtos.MessagePublishedDtoX

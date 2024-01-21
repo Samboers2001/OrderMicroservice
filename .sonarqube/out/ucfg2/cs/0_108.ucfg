@@ -1,32 +1,11 @@
 
-YOrderMicroservice.Data.Repositories.OrderRepo.CreateOrder(OrderMicroservice.Models.Order)n
-d/Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/OrderRepo.cs ("0*
-0 (*
-1*æ
-1 (#ã
-à
- (2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>".OrderMicroservice.Data.AppDbContext.Orders.get*p
- (d*b/
--OrderMicroservice.Data.Repositories.OrderRepo"/
-_context#OrderMicroservice.Data.AppDbContext˜•
- (&G
-%1AMicrosoft.EntityFrameworkCore.ChangeTracking.EntityEntry<TEntity>"9Microsoft.EntityFrameworkCore.DbSet<TEntity>.Add(TEntity)*@
- (4
-2
-%0,Microsoft.EntityFrameworkCore.DbSet<TEntity>*5
-  (%)
-'
-orderOrderMicroservice.Models.Order2Add(TEntity)ÐÍ
- ("	
-%2int"5Microsoft.EntityFrameworkCore.DbContext.SaveChanges()*p
- (d*b/
--OrderMicroservice.Data.Repositories.OrderRepo"/
-_context#OrderMicroservice.Data.AppDbContext2SaveChanges()*
-2*.
-2	 (	"
- (	
-implicit return:3
-  (+'
-orderOrderMicroservice.Models.OrderB1/
--OrderMicroservice.Data.Repositories.OrderRepoX
+tOrderMicroservice.Migrations.make_orderRows_nullable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)„
+z/Users/samboers/development/order_management_system/OrderMicroservice/Migrations/20231127092227_make_orderRows_nullable.cs  ($"0*
+0 (*
+1*.
+1	 (	"
+ (	
+implicit return:Y
+% (FM
+migrationBuilder9Microsoft.EntityFrameworkCore.Migrations.MigrationBuilderB86
+4OrderMicroservice.Migrations.make_orderRows_nullableX

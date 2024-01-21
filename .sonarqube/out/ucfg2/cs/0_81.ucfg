@@ -1,43 +1,25 @@
 
-ÃOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler.AcknowledgmentHandler(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)Ü
-z/Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs— —($"0*
-0
-— —(*
-1*ë
-1
-— ‘()Ñ
-Å
+≤OrderMircroservice.Controllers.WeatherForecastController.WeatherForecastController(Microsoft.Extensions.Logging.ILogger<OrderMircroservice.Controllers.WeatherForecastController>)x
+n/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/WeatherForecastController.cs ($"0*
+0 (*
+1*¯
+1 (å
+â
+ (
 
-— ’(	
-
-%0void"object.Object()*V
-
-— ’(	HF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandlerÌ
-Í
-
-” ”(*çF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler"C
-_configuration1Microsoft.Extensions.Configuration.IConfiguration"__id*FD
-B
-configuration1Microsoft.Extensions.Configuration.IConfigurationÉ
-Ä
-
-‘ ‘((òF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler"N
-_scopeFactory=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory"__id*QO
-M
-scopeFactory=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory*
-2*2
-2
-’	 ’(	"!
-
-’ ’(	
-implicit return:P
-
-—% —(AB
-configuration1Microsoft.Extensions.Configuration.IConfiguration:[
-
-—C —(dM
-scopeFactory=Microsoft.Extensions.DependencyInjection.IServiceScopeFactoryBHF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandlerX
+%0void"8Microsoft.AspNetCore.Mvc.ControllerBase.ControllerBase()*7
+ (+)
+'Microsoft.AspNetCore.Mvc.ControllerBase‘
+—
+ (|:
+8OrderMircroservice.Controllers.WeatherForecastController">
+_logger3Microsoft.Extensions.Logging.ILogger<TCategoryName>"__id*A?
+=
+logger3Microsoft.Extensions.Logging.ILogger<TCategoryName>*
+2*.
+2 ("
+ (
+implicit return:I
+% (N=
+logger3Microsoft.Extensions.Logging.ILogger<TCategoryName>B<:
+8OrderMircroservice.Controllers.WeatherForecastControllerX

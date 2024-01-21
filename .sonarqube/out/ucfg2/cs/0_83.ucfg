@@ -1,38 +1,73 @@
 
-=OrderMircroservice.Controllers.OrderController.GetAllOrders()n
-d/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/OrderController.cs0 (<"0*4
-0 ( 
-
-0 (<
-%0"__entrypoint*
-1*ë
-1 (Š‡
- (3/
-%1)System.Collections.Generic.IEnumerable<T>";OrderMicroservice.Data.Interfaces.IOrderRepo.GetAllOrders()*}
- ($q*o0
-.OrderMircroservice.Controllers.OrderController";
-_repository,OrderMicroservice.Data.Interfaces.IOrderRepo2GetAllOrders()|
-z
- (33
-orders)System.Collections.Generic.IEnumerable<T>"__id*31
-/
-%1)System.Collections.Generic.IEnumerable<T>þ
- (-
-%2'Microsoft.AspNetCore.Mvc.OkObjectResult"3Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object?)*>
- (20
-.OrderMircroservice.Controllers.OrderController*A
- (5
-3
-orders)System.Collections.Generic.IEnumerable<T>2Ok(object?)Ç
-Ä
- (u
-%retmMicrosoft.AspNetCore.Mvc.ActionResult<System.Collections.Generic.IEnumerable<OrderMicroservice.Models.Order>>"__id*;
- (/
+jOrderMicroservice.Controllers.MessageController.PublishMessage(OrderMicroservice.Dtos.MessagePublishedDto)p
+f/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/MessageController.cs (+"0*µ
+0 (z
+x
+ (+^
+8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto""
+<Message>k__BackingFieldstring"__entrypointi
+g
+ (+M
+8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto"
+Messagestring"__entrypoint©
+¦
+	 (
+%0"
+__annotate*JHF
+DMicrosoft.AspNetCore.Mvc.HttpPostAttribute.HttpPostAttribute(string)*<:
+8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto£
+ 
+- (5
+%1"
+__annotate*DB@
+>Microsoft.AspNetCore.Mvc.FromBodyAttribute.FromBodyAttribute()*<:
+8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDtoh
+f
+, (U8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto"__annotation*
+
+%0*
+
+%1*
+1*Æ
+1 (8½º
+ (;
+
+%2void"~OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient.PublishNewMessage(OrderMicroservice.Dtos.MessagePublishedDto)*š
+ (*Š1
+/OrderMicroservice.Controllers.MessageController"U
+_messageBusClient@OrderMicroservice.AsyncDataServices.Interfaces.IMessageBusClient*F
+0 (::
+8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDto2=PublishNewMessage(OrderMicroservice.Dtos.MessagePublishedDto)ðí
+ (8-
+%3'Microsoft.AspNetCore.Mvc.OkObjectResult"3Microsoft.AspNetCore.Mvc.ControllerBase.Ok(object?)*?
+ (31
+/OrderMicroservice.Controllers.MessageController*/
+ (7#!
+Message published successfully.2Ok(object?)
+}
+ (8.
+%ret&Microsoft.AspNetCore.Mvc.IActionResult"__id*;
+ (8/
 -
-%2'Microsoft.AspNetCore.Mvc.OkObjectResult*
-2*“
-2	 (	"ƒ
- (	w
-u
-%retmMicrosoft.AspNetCore.Mvc.ActionResult<System.Collections.Generic.IEnumerable<OrderMicroservice.Models.Order>>B20
-.OrderMircroservice.Controllers.OrderController
+%3'Microsoft.AspNetCore.Mvc.OkObjectResult*
+2*K
+2	 (	"<
+ (	0
+.
+%ret&Microsoft.AspNetCore.Mvc.IActionResult:D
+, (U8
+
+messageDto*OrderMicroservice.Dtos.MessagePublishedDtoB31
+/OrderMicroservice.Controllers.MessageController

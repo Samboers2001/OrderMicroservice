@@ -1,17 +1,27 @@
 
-LOrderMicroservice.MessageBusEvents.ProductCreatedEvent.ExternalProductId.getw
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*"0*þ
-0+ (+ã
-à
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*
-%retint"__id*Ñ
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*V*T8
-6OrderMicroservice.MessageBusEvents.ProductCreatedEvent"
-ExternalProductIdint"ˆ
-w
-m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/ProductCreatedEvent.cs' (*
-
-%retintB:8
-6OrderMicroservice.MessageBusEvents.ProductCreatedEventX
+0OrderMicroservice.Data.AppDbContext.Products.getd
+Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
+) 
+(,"0*Ö
+0
+- 
+(-Œ
+‰
+d
+Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
+) 
+(,M
+%retEMicrosoft.EntityFrameworkCore.DbSet<OrderMicroservice.Models.Product>"__id*Ë
+d
+Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
+) 
+(,c*a%
+#OrderMicroservice.Data.AppDbContext"8
+Products,Microsoft.EntityFrameworkCore.DbSet<TEntity>"·
+d
+Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
+) 
+(,O
+M
+%retEMicrosoft.EntityFrameworkCore.DbSet<OrderMicroservice.Models.Product>B'%
+#OrderMicroservice.Data.AppDbContext

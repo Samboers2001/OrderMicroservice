@@ -1,6 +1,0 @@
-ƒ
-4OrderMicroservice.Migrations.make_orderRows_nullable2Microsoft.EntityFrameworkCore.Migrations.Migrationobject³
-=Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)rOrderMicroservice.Migrations.make_orderRows_nullable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)·
-?Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)tOrderMicroservice.Migrations.make_orderRows_nullable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)±
-<BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)qOrderMicroservice.Migrations.make_orderRows_nullable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)k
-make_orderRows_nullable()NOrderMicroservice.Migrations.make_orderRows_nullable.make_orderRows_nullable()

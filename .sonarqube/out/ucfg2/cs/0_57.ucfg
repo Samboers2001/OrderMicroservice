@@ -1,16 +1,17 @@
 
-+OrderMicroservice.Models.OrderRow.Price.setb
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs$ ('"0*«
-0( ((º
-π
++OrderMicroservice.Models.OrderRow.Price.getb
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs (""0*©
+0# (#†
+ù
 b
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs$ ('7#
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs ("
+%retdecimal"__id*ü
+b
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs ("9*7#
 !OrderMicroservice.Models.OrderRow"
-Pricedecimal"__id*
-
-valuedecimal"y
+Pricedecimal"w
 b
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs$ ('
-implicit return:
-valuedecimalB%#
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs ("
+
+%retdecimalB%#
 !OrderMicroservice.Models.OrderRowX

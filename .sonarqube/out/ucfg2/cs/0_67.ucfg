@@ -1,17 +1,28 @@
 
-,OrderMicroservice.Models.Order.OrderRows.get_
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5"0* 
-06 (6Ä
-˝
+-OrderMicroservice.Models.Order.CustomerId.get_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs
+# 
+(&"0*ü
+0
+' 
+('ö
+ó
 _
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5R
-%retJSystem.Collections.Generic.ICollection<OrderMicroservice.Models.OrderRow>?"__id*ø
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs
+# 
+(&
+%retstring"__id*ù
 _
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5\*Z 
-OrderMicroservice.Models.Order"6
-	OrderRows)System.Collections.Generic.ICollection<T>"∑
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs
+# 
+(&:*8 
+OrderMicroservice.Models.Order"
+
+CustomerIdstring"s
 _
-U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5T
-R
-%retJSystem.Collections.Generic.ICollection<OrderMicroservice.Models.OrderRow>?B" 
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs
+# 
+(&
+
+%retstringB" 
 OrderMicroservice.Models.Order

@@ -1,5 +1,4 @@
-ù
-*OrderMicroservice.Dtos.MessagePublishedDtoobjectY
-MessagePublishedDto()@OrderMicroservice.Dtos.MessagePublishedDto.MessagePublishedDto()E
-Message.get6OrderMicroservice.Dtos.MessagePublishedDto.Message.getE
-Message.set6OrderMicroservice.Dtos.MessagePublishedDto.Message.set
+É
+DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandlerobjectŸ
+áAcknowledgmentHandler(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)ÃOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler.AcknowledgmentHandler(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)W
+Start()LOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler.Start()
