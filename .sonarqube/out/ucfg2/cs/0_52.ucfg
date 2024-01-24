@@ -1,16 +1,16 @@
 
-3OrderMircroservice.WeatherForecast.TemperatureC.setb
-X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs# (&"0*Ç
-0' ('¼
-¹
+-OrderMicroservice.Models.OrderRow.OrderId.setb
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%"0*Á
+0& (&¶
+³
 b
-X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs# (&;$
-"OrderMircroservice.WeatherForecast"
-TemperatureCint"__id*
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%5#
+!OrderMicroservice.Models.OrderRow"
+OrderIdint"__id*
 
 valueint"y
 b
-X/Users/samboers/development/order_management_system/OrderMicroservice/WeatherForecast.cs# (&
+X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs" (%
 implicit return:
-valueintB&$
-"OrderMircroservice.WeatherForecastX
+valueintB%#
+!OrderMicroservice.Models.OrderRowX

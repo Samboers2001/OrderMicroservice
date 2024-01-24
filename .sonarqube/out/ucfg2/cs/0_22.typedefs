@@ -1,4 +1,7 @@
-ƒ
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandlerobjectÙ
-‡AcknowledgmentHandler(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)ÌOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler.AcknowledgmentHandler(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)W
-Start()LOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler.Start()
+É
+6OrderMicroservice.MessageBusEvents.UserRegisteredEventobjecte
+UserRegisteredEvent()LOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserRegisteredEvent()O
+
+UserId.getAOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserId.getO
+
+UserId.setAOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserId.set

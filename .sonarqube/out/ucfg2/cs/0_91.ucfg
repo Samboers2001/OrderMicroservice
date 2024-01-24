@@ -1,51 +1,16 @@
 
-_OrderMicroservice.Data.AppDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)d
-Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs  (/"0*
-0 (*
-1*š
-1 (,ú÷
- ((P
-%0JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>"<Microsoft.EntityFrameworkCore.ModelBuilder.Entity<TEntity>()*H
- (<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder2Entity<TEntity>()ÛØ
- (*j
-%1dMicrosoft.EntityFrameworkCore.Metadata.Builders.CollectionNavigationBuilder<TEntity, TRelatedEntity>"ÖMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.HasMany<TRelatedEntity>(System.Linq.Expressions.Expression<System.Func<TEntity, System.Collections.Generic.IEnumerable<TRelatedEntity>?>>?)*^
- ((R
-P
-%0JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
- ()
-	{unknown}2‹HasMany<TRelatedEntity>(System.Linq.Expressions.Expression<System.Func<TEntity, System.Collections.Generic.IEnumerable<TRelatedEntity>?>>?)¨¥
- ((t
-%2nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>"¸Microsoft.EntityFrameworkCore.Metadata.Builders.CollectionNavigationBuilder<TEntity, TRelatedEntity>.WithOne(System.Linq.Expressions.Expression<System.Func<TRelatedEntity, TEntity?>>?)*x
- (*l
-j
-%1dMicrosoft.EntityFrameworkCore.Metadata.Builders.CollectionNavigationBuilder<TEntity, TRelatedEntity>*
- ('
-	{unknown}2SWithOne(System.Linq.Expressions.Expression<System.Func<TRelatedEntity, TEntity?>>?)ú÷
- (+P
-%3JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>"<Microsoft.EntityFrameworkCore.ModelBuilder.Entity<TEntity>()*H
- (<
-:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilder2Entity<TEntity>()‡„
- ('i
-%4cMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>"­Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>.HasOne<TRelatedEntity>(System.Linq.Expressions.Expression<System.Func<TEntity, TRelatedEntity?>>?)*^
- (+R
-P
-%3JMicrosoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>*
- (&
-	{unknown}2bHasOne<TRelatedEntity>(System.Linq.Expressions.Expression<System.Func<TEntity, TRelatedEntity?>>?)øõ
- (+t
-%5nMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceCollectionBuilder<TPrincipalEntity, TDependentEntity>"àMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>.WithMany(System.Linq.Expressions.Expression<System.Func<TRelatedEntity, System.Collections.Generic.IEnumerable<TEntity>?>>?)*w
- ('k
-i
-%4cMicrosoft.EntityFrameworkCore.Metadata.Builders.ReferenceNavigationBuilder<TEntity, TRelatedEntity>*
- (*
-	{unknown}2|WithMany(System.Linq.Expressions.Expression<System.Func<TRelatedEntity, System.Collections.Generic.IEnumerable<TEntity>?>>?)*
-2*.
-2	 (	"
- (	
-implicit return:F
-0 (I:
-modelBuilder*Microsoft.EntityFrameworkCore.ModelBuilderB'%
-#OrderMicroservice.Data.AppDbContextX
+AOrderMicroservice.MessageBusEvents.UserRegisteredEvent.UserId.setw
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs$ ('"0*†
+0( ((å
+â
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs$ ('L8
+6OrderMicroservice.MessageBusEvents.UserRegisteredEvent"
+UserIdstring"__id*
+
+valuestring"Ž
+w
+m/Users/samboers/development/order_management_system/OrderMicroservice/MessageBusEvents/UserRegisteredEvent.cs$ ('
+implicit return:
+valuestringB:8
+6OrderMicroservice.MessageBusEvents.UserRegisteredEventX

@@ -1,17 +1,17 @@
 
-+OrderMicroservice.Models.OrderRow.Price.getb
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs (""0*©
-0# (#†
-ù
-b
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs ("
-%retdecimal"__id*ü
-b
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs ("9*7#
-!OrderMicroservice.Models.OrderRow"
-Pricedecimal"w
-b
-X/Users/samboers/development/order_management_system/OrderMicroservice/Models/OrderRow.cs ("
-
-%retdecimalB%#
-!OrderMicroservice.Models.OrderRowX
+,OrderMicroservice.Models.Order.OrderRows.get_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5"0* 
+06 (6Ä
+˝
+_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5R
+%retJSystem.Collections.Generic.ICollection<OrderMicroservice.Models.OrderRow>?"__id*ø
+_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5\*Z 
+OrderMicroservice.Models.Order"6
+	OrderRows)System.Collections.Generic.ICollection<T>"∑
+_
+U/Users/samboers/development/order_management_system/OrderMicroservice/Models/Order.cs2 (5T
+R
+%retJSystem.Collections.Generic.ICollection<OrderMicroservice.Models.OrderRow>?B" 
+OrderMicroservice.Models.Order

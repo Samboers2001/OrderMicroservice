@@ -224,7 +224,14 @@ f/Users/samboers/development/order_management_system/OrderMicroservice/Controlle
 3 C  0
 
  +
-K U0 :ˇ
+K U0 :ù
+w/Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Interfaces/IMessageBusClient.cs
+
+ &
+
+ 
+
+3 Fˇ
 z/Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs
 
  %4
@@ -355,14 +362,7 @@ z/Users/samboers/development/order_management_system/OrderMicroservice/AsyncData
 ËË" .
 
 ËË0 2
-ÍÍV Xù
-w/Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Interfaces/IMessageBusClient.cs
-
- &
-
- 
-
-3 Fô
+ÍÍV Xô
 {/Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs
 
 		 !(

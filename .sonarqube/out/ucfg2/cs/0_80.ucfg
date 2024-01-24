@@ -1,43 +1,27 @@
 
-ÌOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler.AcknowledgmentHandler(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory)†
-z/Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.csÑ Ñ($"0*
-0
-Ñ Ñ(*
-1*‘
-1
-Ñ Ô()„
-
+lOrderMircroservice.Controllers.OrderController.OrderController(OrderMicroservice.Data.Interfaces.IOrderRepo)n
+d/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/OrderController.cs ("0*
+0 (*
+1*è
+1 (%Œ
+‰
+ (	
 
-Ñ Õ(	
+%0void"8Microsoft.AspNetCore.Mvc.ControllerBase.ControllerBase()*7
+ (	+)
+'Microsoft.AspNetCore.Mvc.ControllerBaseÄ
+Á
+ ($o0
+.OrderMircroservice.Controllers.OrderController";
+_repository,OrderMicroservice.Data.Interfaces.IOrderRepo"__id*><
+:
 
-%0void"object.Object()*V
+repository,OrderMicroservice.Data.Interfaces.IOrderRepo*
+2*.
+2	 (	"
+ (	
+implicit return:F
+ (4:
 
-Ñ Õ(	HF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandlerí
-ê
-
-Ó Ó(*F
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler"C
-_configuration1Microsoft.Extensions.Configuration.IConfiguration"__id*FD
-B
-configuration1Microsoft.Extensions.Configuration.IConfigurationƒ
-€
-
-Ô Ô((˜F
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandler"N
-_scopeFactory=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory"__id*QO
-M
-scopeFactory=Microsoft.Extensions.DependencyInjection.IServiceScopeFactory*
-2*2
-2
-Õ	 Õ(	"!
-
-Õ Õ(	
-implicit return:P
-
-Ñ% Ñ(AB
-configuration1Microsoft.Extensions.Configuration.IConfiguration:[
-
-ÑC Ñ(dM
-scopeFactory=Microsoft.Extensions.DependencyInjection.IServiceScopeFactoryBHF
-DOrderMicroservice.AsyncDataServices.Subscriber.AcknowledgmentHandlerX
+repository,OrderMicroservice.Data.Interfaces.IOrderRepoB20
+.OrderMircroservice.Controllers.OrderControllerX

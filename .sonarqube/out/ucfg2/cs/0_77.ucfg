@@ -1,25 +1,27 @@
 
-²OrderMircroservice.Controllers.WeatherForecastController.WeatherForecastController(Microsoft.Extensions.Logging.ILogger<OrderMircroservice.Controllers.WeatherForecastController>)x
-n/Users/samboers/development/order_management_system/OrderMicroservice/Controllers/WeatherForecastController.cs ($"0*
-0 (*
-1*ø
-1 (Œ
-‰
- (
-
-%0void"8Microsoft.AspNetCore.Mvc.ControllerBase.ControllerBase()*7
- (+)
-'Microsoft.AspNetCore.Mvc.ControllerBaseÔ
-Ñ
- (|:
-8OrderMircroservice.Controllers.WeatherForecastController">
-_logger3Microsoft.Extensions.Logging.ILogger<TCategoryName>"__id*A?
-=
-logger3Microsoft.Extensions.Logging.ILogger<TCategoryName>*
-2*.
-2 ("
- (
-implicit return:I
-% (N=
-logger3Microsoft.Extensions.Logging.ILogger<TCategoryName>B<:
-8OrderMircroservice.Controllers.WeatherForecastControllerX
+0OrderMicroservice.Data.AppDbContext.Products.getd
+Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
+) 
+(,"0*Ö
+0
+- 
+(-Œ
+‰
+d
+Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
+) 
+(,M
+%retEMicrosoft.EntityFrameworkCore.DbSet<OrderMicroservice.Models.Product>"__id*Ë
+d
+Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
+) 
+(,c*a%
+#OrderMicroservice.Data.AppDbContext"8
+Products,Microsoft.EntityFrameworkCore.DbSet<TEntity>"·
+d
+Z/Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs
+) 
+(,O
+M
+%retEMicrosoft.EntityFrameworkCore.DbSet<OrderMicroservice.Models.Product>B'%
+#OrderMicroservice.Data.AppDbContext

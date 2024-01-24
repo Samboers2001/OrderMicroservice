@@ -12,6 +12,7 @@ using OrderMicroservice.Models;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using StackExchange.Redis;
+using System.Runtime.CompilerServices;
 
 namespace OrderMicroservice.AsyncDataServices.Subscriber
 {
@@ -111,7 +112,21 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
 
                         // Acknowledge the original message
                         _channel.BasicAck(ea.DeliveryTag, false);
-                    } else
+                    } else if (ea.RoutingKey == "product.deleted")
+                    {
+                        var productDeletedEvent = JsonSerializer.Deserialize<ProductDeletedEvent>(serializedMessage);
+                        Console.WriteLine(productDeletedEvent);
+
+                        // Process the message
+                        await ProcessProductDeleted(productDeletedEvent, ProductRepository);
+
+                        // Send acknowledgment
+                        SendAcknowledgment(productDeletedEvent.ExternalProductId.ToString());
+
+                        // Acknowledge the original message
+                        _channel.BasicAck(ea.DeliveryTag, false);
+                    }
+                    else
                     {
                         Console.WriteLine($"Received a message with unexpected routing key: {ea.RoutingKey}");
                         _channel.BasicNack(ea.DeliveryTag, false, false);
@@ -179,6 +194,26 @@ namespace OrderMicroservice.AsyncDataServices.Subscriber
             await productRepository.SaveChangesAsync();
 
             Console.WriteLine($"--> Order created for UserId: {productCreatedEvent.ExternalProductId}");
+        }
+
+        private async Task ProcessProductDeleted(ProductDeletedEvent productDeletedEvent, IProductRepo productRepository)
+        {
+            Console.WriteLine("--> Processing ProductDeletedEvent");
+            Console.WriteLine($"--> ProductId: {productDeletedEvent.ExternalProductId}");
+
+            // Check if an order already exists for this user
+            var existingOrder = productRepository.GetProductById(productDeletedEvent.ExternalProductId);
+            if (existingOrder == null)
+            {
+                Console.WriteLine($"--> Product does not exist with Id: {productDeletedEvent.ExternalProductId}");
+                return;
+            }
+
+            productRepository.DeleteProduct(existingOrder);
+            // Ensure to save the changes to the database
+            await productRepository.SaveChangesAsync();
+
+            Console.WriteLine($"--> Product deleted with Id: {productDeletedEvent.ExternalProductId}");
         }
 
 

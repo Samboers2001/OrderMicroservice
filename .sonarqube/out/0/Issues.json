@@ -82,117 +82,6 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'Orders' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 16,
-                  "endLine": 13,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 29,
-                  "endLine": 8,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'OrderRows' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 16,
-                  "endLine": 13,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 32,
-                  "endLine": 9,
-                  "endColumn": 41
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Products' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 16,
-                  "endLine": 13,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 31,
-                  "endLine": 10,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
           "message": "Non-nullable field '_connection' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
           "locations": [
             {
@@ -327,107 +216,108 @@
           }
         },
         {
-          "ruleId": "CS8604",
-          "level": "warning",
-          "message": "Possible null reference argument for parameter 's' in 'int int.Parse(string s)'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 34,
-                  "endLine": 21,
-                  "endColumn": 64
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8622",
-          "level": "warning",
-          "message": "Nullability of reference types in type of parameter 'sender' of 'void MessageBusClient.RabbitMQ_ConnectionShutdown(object sender, ShutdownEventArgs e)' doesn't match the target delegate 'EventHandler<ShutdownEventArgs>' (possibly because of nullability attributes).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
-                "region": {
-                  "startLine": 31,
-                  "startColumn": 51,
-                  "endLine": 31,
-                  "endColumn": 78
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable field '_connection' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
+          "message": "Non-nullable property 'Orders' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 16,
-                  "endLine": 15,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 38,
-                  "endLine": 12,
-                  "endColumn": 49
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable field '_channel' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 16,
-                  "endLine": 15,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs",
                 "region": {
                   "startLine": 13,
-                  "startColumn": 33,
+                  "startColumn": 16,
                   "endLine": 13,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 29,
+                  "endLine": 8,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'OrderRows' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 16,
+                  "endLine": 13,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 32,
+                  "endLine": 9,
                   "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Products' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 16,
+                  "endLine": 13,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/AppDbContext.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 31,
+                  "endLine": 10,
+                  "endColumn": 39
                 }
               }
             }
@@ -634,6 +524,116 @@
           "locations": [
             {
               "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 34,
+                  "endLine": 21,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8622",
+          "level": "warning",
+          "message": "Nullability of reference types in type of parameter 'sender' of 'void MessageBusClient.RabbitMQ_ConnectionShutdown(object sender, ShutdownEventArgs e)' doesn't match the target delegate 'EventHandler<ShutdownEventArgs>' (possibly because of nullability attributes).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 51,
+                  "endLine": 31,
+                  "endColumn": 78
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable field '_connection' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 16,
+                  "endLine": 15,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 38,
+                  "endLine": 12,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable field '_channel' must contain a non-null value when exiting constructor. Consider declaring the field as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 16,
+                  "endLine": 15,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Implementations/MessageBusClient.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 33,
+                  "endLine": 13,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Possible null reference argument for parameter 's' in 'int int.Parse(string s)'.",
+          "locations": [
+            {
+              "resultFile": {
                 "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/AsyncDataServices/Subscriber/MessageBusSubscriber.cs",
                 "region": {
                   "startLine": 48,
@@ -697,12 +697,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/OrderRepo.cs",
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/ProductRepo.cs",
                 "region": {
-                  "startLine": 27,
+                  "startLine": 29,
                   "startColumn": 20,
-                  "endLine": 27,
-                  "endColumn": 79
+                  "endLine": 29,
+                  "endColumn": 91
                 }
               }
             }
@@ -718,12 +718,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/ProductRepo.cs",
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Data/Repositories/OrderRepo.cs",
                 "region": {
-                  "startLine": 29,
+                  "startLine": 27,
                   "startColumn": 20,
-                  "endLine": 29,
-                  "endColumn": 91
+                  "endLine": 27,
+                  "endColumn": 79
                 }
               }
             }
@@ -922,27 +922,6 @@
           }
         },
         {
-          "ruleId": "S1186",
-          "level": "warning",
-          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Migrations/20231127092227_make_orderRows_nullable.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 33,
-                  "endLine": 17,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S1481",
           "level": "warning",
           "message": "Remove the unused local variable 'redisConnectionString'.",
@@ -955,6 +934,27 @@
                   "startColumn": 21,
                   "endLine": 34,
                   "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1186",
+          "level": "warning",
+          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/samboers/development/order_management_system/OrderMicroservice/Migrations/20231127092227_make_orderRows_nullable.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 33,
+                  "endLine": 17,
+                  "endColumn": 37
                 }
               }
             }
